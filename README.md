@@ -9,9 +9,10 @@
 
 ## Install:
     ```
-    git clone --recursive https://github.com/rjcoelho/dotfiles ~/.dotfiles
-    cd ~/.dotfiles
-    RCRC="./rcrc" rcup
+    git clone --recursive https://github.com/rjcoelho/dotfiles.rcm ~/.dotfiles.rcm
+    cd ~/.dotfiles.rcm ; RCRC="./rcrc" rcup
+      or
+    rcup -d ~/.dotfiles.rcm -x README.md -x LICENSE
     ```
 
 ### Rcm:
