@@ -1,0 +1,13 @@
+"*****************************************************************************
+"" Plug user install packages
+"*****************************************************************************
+
+Plug 'ervandew/supertab'
+Plug 'edkolev/tmuxline.vim' "use :Tmuxline airline :TmuxlineSnapshot .tmux.airline.conf 
+
+" erlang
+"Plug 'jimenezrick/vimerl' "DEPRECATED, USE BELOW INSTEAD
+Plug 'vim-erlang/vim-erlang-omnicomplete'
+Plug 'vim-erlang/vim-erlang-compiler'
+Plug 'vim-erlang/vim-erlang-skeletons'
+Plug 'vim-erlang/vim-erlang-runtime'

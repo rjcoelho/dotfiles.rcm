@@ -23,5 +23,73 @@
     ./Configure && make && sudo make install
     ```
 
+#### ViM
+
+Install (or upgrade) ViM plugins:
+  ```
+  vim +PlugInstall +qall
+  ```
+
+Update ViM bootstrap to latest:
+  ```
+  vim +VimBootstrapUpdate +qall
+  ```
+
+Generate new Vim-bootstrap:
+  ```
+  rm -rf .vim .vimrc
+  curl http://vim-bootstrap.com/generate.vim --data 'editor=vim' > ~/.vimrc
+  ```
+Use '~.vimrc.local' and '~.vimrc.local.bundles' and local (not in dotfiles repo) configuration and bundles
+
+### Erlang/Kerl
+
+Install kerl (non-OSX):
+  ```
+  sudo curl -s https://raw.githubusercontent.com/kerl/kerl/master/kerl -o /usr/local/bin/kerl
+  sudo chmod a+x /usr/local/bin/kerl
+  ```
+
+#### Fasd
+
+Install Fasd (non-OSX):
+  ```
+  sudo curl -s https://raw.githubusercontent.com/clvv/fasd/master/fasd -o /usr/local/bin/fasd
+  sudo chmod +x /usr/local/bin/fasd
+  ```
+
+#### OSX/Brew
+
+Install brew and bundles:
+  ```
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew tap Homebrew/bundle
+  brew bundle --path=.config/brew/Brewfile
+  ```
+
+#### Fzf
+
+Install Fzf (non-OSX):
+  ```
+  sudo git clone --depth 1 https://github.com/junegunn/fzf.git /usr/local/opt/fzf
+  sudo /usr/local/opt/fzf/install --key-bindings --completion --no-update-rc
+  ```
+
+#### VSCode
+
+Install VSCode user settings and extensions:
+  ```
+  if [[ "$OSTYPE" == darwin* ]]; then
+    export VSCODE_USER_SETTINGS=$HOME/Library/Application Support/Code/User
+  elif [[ "$OSTYPE" == linux* ]]; then
+    export VSCODE_USER_SETTINGS=$HOME/.config/Code/User
+  else
+    export VSCODE_USER_SETTINGS=
+  fi
+  if [ -n "$VSCODE_USER_SETTINGS" ]; then
+    ln -sf $HOME/.code/vscode/*.json "$VSCODE_USER_SETTINGS"
+  fi
+  ```
+
 ## References:
 - [rcm, an rc file manager](https://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos)

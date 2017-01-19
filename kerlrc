@@ -1,0 +1,7 @@
+# see http://joedevivo.com/2016/10/06/e-too-many-erlangs.html
+export KERL_BASE_DIR=$HOME/.kerl
+export KERL_DEFAULT_INSTALL_DIR=$KERL_BASE_DIR/installs
+#export KERL_BUILD_BACKEND=git
+#export KERL_ENABLE_PROMPT=true
+export KERL_CONFIGURE_OPTIONS="--enable-hipe --without-wx"
+export KERL_DEFAULT_ACTIVATION=$KERL_DEFAULT_INSTALL_DIR/17.5/activate

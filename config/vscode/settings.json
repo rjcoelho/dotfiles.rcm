@@ -1,0 +1,41 @@
+// Place your settings in this file to overwrite the default settings
+{
+
+// editor
+    "editor.renderIndentGuides": true,
+    "editor.rulers": [80, 120],
+
+// extensions
+    "extensions.autoUpdate": true,
+
+// search
+    "search.exclude": {
+            "**/node_modules": true,
+            "**/bower_components": true,
+            "**/*.beam": true,
+            "_build/**": true,
+            "**/deps": true,
+            "**/rel/**": true
+        },
+
+// files
+    "files.trimTrailingWhitespace": true,
+    "files.associations": {
+            "*.config": "erlang"
+        },
+
+// jiraSearch
+    "jiraSearch.url":"https://jira.miniclip.com",
+    "jiraSearch.username":"rui.coelho",
+    //"jiraSearch.password":"XXXXXXX",
+    //"jiraSearch.jql" : "assignee={username} AND status=Open AND sprint in openSprints() ORDER BY created",
+
+// gitProjectManager
+    "gitProjectManager.baseProjectsFolders": ["/Users/rui.coelho/Repos/"],
+    "gitProjectManager.maxDepthRecursion": 1,
+    "gitProjectManager.storeRepositoriesBetweenSessions": true,
+
+// erlang
+    "erlang.enableExperimentalAutoComplete": true
+}
+

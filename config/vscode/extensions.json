@@ -1,0 +1,20 @@
+{
+    // See http://go.microsoft.com/fwlink/?LinkId=827846
+    // for the documentation about the extensions.json format
+    "recommendations": [
+            "GuardRex.status-bar-tasks",
+            "SirTori.indenticator",
+            "aws-scripting-guy.cform",
+            "deerawan.vscode-dash",
+            "donjayamanne.githistory",
+            "felipecaputo.git-project-manager",
+            "mjmcloug.vscode-elixir",
+            "mohsen1.prettify-json",
+            "ryu1kn.partial-diff",
+            "waderyan.gitblame",
+            "xceleration.jira-search",
+            "yuce.erlang-otp",
+            "zxh404.vscode-proto3"null
+        ]
+}
+
