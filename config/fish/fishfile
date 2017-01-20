@@ -1,3 +1,8 @@
-oh-my-fish/theme-robbyrussell
 fisherman/autoenvstack
+fisherman/await
 oh-my-fish/plugin-fasd
+fisherman/fzf
+fisherman/get
+fisherman/getopts
+fisherman/last_job_id
+oh-my-fish/theme-robbyrussell
