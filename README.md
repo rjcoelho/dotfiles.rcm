@@ -80,14 +80,7 @@ Install Fzf (non-OSX):
 Install VSCode user settings and extensions:
   ```
   if [[ "$OSTYPE" == darwin* ]]; then
-    export VSCODE_USER_SETTINGS=$HOME/Library/Application Support/Code/User
-  elif [[ "$OSTYPE" == linux* ]]; then
-    export VSCODE_USER_SETTINGS=$HOME/.config/Code/User
-  else
-    export VSCODE_USER_SETTINGS=
-  fi
-  if [ -n "$VSCODE_USER_SETTINGS" ]; then
-    ln -sf $HOME/.code/vscode/*.json "$VSCODE_USER_SETTINGS"
+    ln -sf $HOME/.config/Code/User/*.json "$HOME/Library/Application Support/Code/User"
   fi
   ```
 
