@@ -84,5 +84,13 @@ Install VSCode user settings and extensions:
   fi
   ```
 
+## TODO
+- Move to https://github.com/zsh-users/prezto
+- Don't use zgen
+- Support https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
+```
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+```
+
 ## References:
 - [rcm, an rc file manager](https://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos)
