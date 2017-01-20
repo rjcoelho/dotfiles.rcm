@@ -84,7 +84,16 @@ Install VSCode user settings and extensions:
   fi
   ```
 
+### Spacemacs
+
+Install [spacemacs](http://spacemacs.org/):
+```
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+```
+
 ## TODO
+- Add spacemac (and spacevim?)
+- Update Brewfile
 - Move to https://github.com/zsh-users/prezto
 - Don't use zgen
 - Support https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
