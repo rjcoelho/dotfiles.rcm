@@ -1,0 +1,4 @@
+[alias]
+    pull-force = "!git fetch ; git reset --hard @{u}"
+[init]
+    templatedir = ~/.git_template

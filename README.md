@@ -42,6 +42,32 @@ Generate new Vim-bootstrap:
   ```
 Use '~.vimrc.local' and '~.vimrc.local.bundles' and local (not in dotfiles repo) configuration and bundles
 
+### Git
+
+Add aliases:
+  ```
+  git config --global include.path ~/.gitconfig.local
+  ```
+
+### Ctags
+
+Install ctags:
+  ```
+  yum|apt-get|brew ctags
+  ```
+
+Generate .git/tags on checkout [ctags with git](https://github.com/scottsbaldwin/effortless-ctags-with-git):
+   ```
+   git config --global init.templatedir '~/.git_template'
+   cd <REPO> ; chmod +x .git/hooks/* ; git init
+   ```
+
+Using [ctags in vim](https://andrew.stwrt.ca/posts/vim-ctags/)
+   ```
+   :tag function_name
+   :set tags # show tags file used
+   ```
+
 ### Erlang/Kerl
 
 Install kerl (non-OSX):
