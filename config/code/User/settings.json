@@ -36,6 +36,7 @@
     "gitProjectManager.storeRepositoriesBetweenSessions": true,
 
 // erlang
-    "erlang.enableExperimentalAutoComplete": true
+    "erlang.enableExperimentalAutoComplete": true,
+    "window.zoomLevel": 0
 }
 
