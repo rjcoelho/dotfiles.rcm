@@ -118,7 +118,6 @@ Install [spacemacs](http://spacemacs.org/):
     ```
 
 ## TODO
-- Update Brewfile
 - Move to https://github.com/zsh-users/prezto
 - Don't use zgen
 
