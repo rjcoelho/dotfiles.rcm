@@ -8,118 +8,128 @@
 - [Rcm](https://github.com/thoughtbot/rcm)
 
 ## Install:
-    ```
-    git clone --recursive https://github.com/rjcoelho/dotfiles.rcm ~/.dotfiles.rcm
-    cd ~/.dotfiles.rcm ; RCRC="./rcrc" rcup
-      or
-    rcup -d ~/.dotfiles.rcm -x README.md -x LICENSE
-    ```
+```
+git clone --recursive https://github.com/rjcoelho/dotfiles.rcm ~/.dotfiles.rcm
+rcup -d ~/.dotfiles.rcm -x README.md -x LICENSE
+```
 
 ### Rcm:
-    ```
-    curl -LO https://thoughtbot.github.io/rcm/dist/rcm-1.3.0.tar.gz
-    tar -xvf rcm-1.3.0.tar.gz
-    cd rcm-1.3.0
-    ./Configure && make && sudo make install
-    ```
 
-#### ViM
+Install (rcm)[https://github.com/thoughtbot/rcm] (non-OSX):
+```
+curl -LO https://thoughtbot.github.io/rcm/dist/rcm-1.3.0.tar.gz
+tar -xvf rcm-1.3.0.tar.gz
+cd rcm-1.3.0
+./Configure && make && sudo make install
+```
+
+### [Neovim](https://github.com/neovim/neovim):
+
+Install neovim (non-OSX):
+```
+# non-osx
+yum|apt-get neovim python2-neovim python-neovim
+
+# osx (already on Brewfile)
+pip install neovim --upgrade
+pip3 install neovim --upgrade
+```
+
+### [Vim-bootstrap](https://github.com/avelino/vim-bootstrap):
 
 Install (or upgrade) ViM plugins:
-    ```
-    vim +PlugInstall +qall
-    ```
+```
+vim +PlugInstall +qall
+```
 
 Update ViM bootstrap to latest:
-    ```
-    vim +VimBootstrapUpdate +qall
-    ```
+```
+vim +VimBootstrapUpdate +qall
+```
 
-Generate new Vim-bootstrap:
-    ```
-    rm -rf .vim .vimrc
-    curl http://vim-bootstrap.com/generate.vim --data 'editor=vim' > ~/.vimrc
-    ```
-Use '~.vimrc.local' and '~.vimrc.local.bundles' and local (not in dotfiles repo) configuration and bundles
+Use ```~.vimrc.local``` and ```~.vimrc.local.bundles``` to customize configuration and bundles.
 
-### Git
+### Git-templates
 
-Add aliases:
-    ```
-    git config --global include.path ~/.gitconfig.local
-    ```
+Add aliases and templates:
+```
+git config --global include.path ~/.gitconfig.local
+```
 
-### Ctags
+### [Ctags](http://ctags.sourceforge.net/)
 
-Install ctags:
-    ```
-    yum|apt-get|brew ctags
-    ```
+Install ctags (non-OSX):
+```
+yum|apt-get|pacman ctags
+```
 
-Generate .git/tags on checkout [ctags with git](https://github.com/scottsbaldwin/effortless-ctags-with-git):
-    ```
-    git config --global init.templatedir '~/.git_template'
-    cd <REPO> ; chmod +x .git/hooks/* ; git init
-    ```
+Generate ```.git/tags``` on checkout [ctags with git](https://github.com/scottsbaldwin/effortless-ctags-with-git):
+```
+git config --global init.templatedir '~/.git_template'
+cd <REPO> ; chmod +x .git/hooks/* ; git init
+```
 
 Using [ctags in vim](https://andrew.stwrt.ca/posts/vim-ctags/)
-    ```
-    :tag function_name
-    :set tags # show tags file used
-    ```
+```
+:tag function_name
+:set tags # show tags file used
+```
 
-### Erlang/Kerl
+### [Erlang/Kerl](https://github.com/kerl/kerl)
 
 Install kerl (non-OSX):
-    ```
-    sudo curl -s https://raw.githubusercontent.com/kerl/kerl/master/kerl -o /usr/local/bin/kerl
-    sudo chmod a+x /usr/local/bin/kerl
-    ```
+```
+sudo curl -s https://raw.githubusercontent.com/kerl/kerl/master/kerl -o /usr/local/bin/kerl
+sudo chmod a+x /usr/local/bin/kerl
+```
 
-#### Fasd
+### [Fasd](https://github.com/clvv/fasd)
 
 Install Fasd (non-OSX):
-    ```
-    sudo curl -s https://raw.githubusercontent.com/clvv/fasd/master/fasd -o /usr/local/bin/fasd
-    sudo chmod +x /usr/local/bin/fasd
-    ```
+```
+sudo curl -s https://raw.githubusercontent.com/clvv/fasd/master/fasd -o /usr/local/bin/fasd
+sudo chmod +x /usr/local/bin/fasd
+```
 
-#### OSX/Brew
+### [OSX/Brew](http://brew.sh/)
 
 Install brew and bundles:
-    ```
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    brew tap Homebrew/bundle
-    brew bundle --path=.config/brew/Brewfile
-    ```
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew tap Homebrew/bundle
+brew bundle --path=~/.config/brew/Brewfile
+```
 
-#### Fzf
+Upgrade brewfile:
+```
+brew bundle dump --file=~/.config/brew/Brewfile --force
+```
 
-Install Fzf (non-OSX):
-    ```
-    sudo git clone --depth 1 https://github.com/junegunn/fzf.git /usr/local/opt/fzf
-    sudo /usr/local/opt/fzf/install --key-bindings --completion --no-update-rc
-    ```
+### [Fzf](https://github.com/junegunn/fzf)
 
-#### VSCode
+Install (fzf (non-OSX):
+```
+sudo git clone --depth 1 https://github.com/junegunn/fzf.git /usr/local/opt/fzf
+sudo /usr/local/opt/fzf/install --key-bindings --completion --no-update-rc
+```
+
+### [VSCode](https://github.com/Microsoft/vscode)
 
 Install VSCode user settings and extensions:
-    ```
-    if [[ "$OSTYPE" == darwin* ]]; then
-      ln -sf $HOME/.config/Code/User/*.json "$HOME/Library/Application Support/Code/User"
-    fi
-    ```
+```
+if [[ "$OSTYPE" == darwin* ]]; then
+    ln -sf $HOME/.config/Code/User/*.json "$HOME/Library/Application Support/Code/User"
+fi
+```
 
-#### Spacemacs
+### [Spacemacs](http://spacemacs.org/)
 
-Install [spacemacs](http://spacemacs.org/):
-    ```
-    git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-    ```
+Install spacemacs (emacs distribution):
+```
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+```
 
 ## TODO
 - Move to https://github.com/zsh-users/prezto
 - Don't use zgen
-
-## References:
-- [rcm, an rc file manager](https://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos)
+- Optional support spacevim
