@@ -129,6 +129,23 @@ Install spacemacs (emacs distribution):
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 
+### [Spacevim](https://spacevim.org)
+
+Install spacevim (vim distribution):
+```
+curl -sLf https://spacevim.org/install.sh | bash
+```
+
+To update plugins:
+```
+vim ':call dein#update()'
+```
+
+To uninstall:
+```
+curl -sLf https://spacevim.org/install.sh | bash -s -- uninstall
+```
+
 ## TODO
 - Move to https://github.com/zsh-users/prezto
 - Don't use zgen
