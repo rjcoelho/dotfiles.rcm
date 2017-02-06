@@ -1,0 +1,2 @@
+"Use :Tmuxline airline :TmuxlineSnapshot .tmux.conf.airline
+Plug 'edkolev/tmuxline.vim'

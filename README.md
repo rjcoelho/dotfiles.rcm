@@ -35,6 +35,12 @@ pip install neovim --upgrade
 pip3 install neovim --upgrade
 ```
 
+To use your existing Vim configurations:
+```
+ln -sf ~/.vim ~/.config/nvim
+ln -sf ~/.vimrc ~/.config/nvim/init.vim
+```
+
 ### [Vim-bootstrap](https://github.com/avelino/vim-bootstrap):
 
 Install (or upgrade) ViM plugins:
@@ -47,7 +53,12 @@ Update ViM bootstrap to latest:
 vim +VimBootstrapUpdate +qall
 ```
 
-Use ```~.vimrc.local``` and ```~.vimrc.local.bundles``` to customize configuration and bundles.
+Cleanup/remove unused directories/plugins:
+```
+vim +PlugClean! +qall
+```
+
+Add files to ```~/.vimrc.d/*.vim``` and ```~/.vimrc.d/*.bundle``` to customize configuration and bundles.
 
 ### Git-templates
 
@@ -138,7 +149,12 @@ curl -sLf https://spacevim.org/install.sh | bash
 
 To update plugins:
 ```
-vim ':call dein#update()'
+:call dein#update()
+```
+
+To remove disabled plugins:
+```
+:call map(dein#check_clean(), "delete(v:val, 'rf')")
 ```
 
 To uninstall:
@@ -147,6 +163,5 @@ curl -sLf https://spacevim.org/install.sh | bash -s -- uninstall
 ```
 
 ## TODO
-- Move to https://github.com/zsh-users/prezto
-- Don't use zgen
-- Optional support spacevim
+- Maybe drop prezto? or replace with zsh-users/prezto
+- Slimdown spacevim by removing all layers by default
