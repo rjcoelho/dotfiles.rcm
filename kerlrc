@@ -5,3 +5,4 @@ export KERL_DEFAULT_INSTALL_DIR=$KERL_BASE_DIR/installs
 #export KERL_ENABLE_PROMPT=true
 export KERL_CONFIGURE_OPTIONS="--enable-hipe --without-wx"
 export KERL_DEFAULT_ACTIVATION=$KERL_DEFAULT_INSTALL_DIR/17.5/activate
+export KERL_BUILD_PLT=true
