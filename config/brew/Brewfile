@@ -147,7 +147,8 @@ brew 'libzip'
 brew 'little-cms2'
 brew 'lnav'
 brew 'lua'
-brew 'macvim'
+brew 'luajit'
+brew 'macvim', args: ['with-lua']
 brew 'mhash'
 brew 'mcrypt'
 brew 'protobuf'
@@ -187,7 +188,7 @@ brew 'tree'
 brew 'unibilium'
 brew 'unixodbc'
 brew 'utf8proc'
-brew 'vim'
+brew 'vim', args: ['with-luajit']
 brew 'weechat', args: ['with-perl', 'with-python']
 brew 'zsh'
 brew 'fisherman/tap/fisherman'
