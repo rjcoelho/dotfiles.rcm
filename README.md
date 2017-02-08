@@ -41,24 +41,24 @@ ln -sf ~/.vim ~/.config/nvim
 ln -sf ~/.vimrc ~/.config/nvim/init.vim
 ```
 
-### [Vim-bootstrap](https://github.com/avelino/vim-bootstrap):
+### [Spacevim](https://github.com/liuchengxu/space-vim)
 
-Install (or upgrade) ViM plugins:
+Install spacevim (vim distribution):
 ```
-vim +PlugInstall +qall
-```
-
-Update ViM bootstrap to latest:
-```
-vim +VimBootstrapUpdate +qall
+git clone https://github.com/liuchengxu/space-vim.git ~/.space-vim
+ln -sf ~/.space-vim/init.vim ~/.vimrc
+vim/nvim +PlugInstall +qall
 ```
 
 Cleanup/remove unused directories/plugins:
 ```
-vim +PlugClean! +qall
+vim/nvim +PlugClean! +qall
 ```
 
-Add files to ```~/.vimrc.d/*.vim``` and ```~/.vimrc.d/*.bundle``` to customize configuration and bundles.
+To uninstall (vim distribution):
+```
+rm -f ~/.vimrc ~/.vim ~/.space-vim
+```
 
 ### Git-templates
 
@@ -141,28 +141,6 @@ fi
 Install spacemacs (emacs distribution):
 ```
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-```
-
-### [Spacevim](https://spacevim.org)
-
-Install spacevim (vim distribution):
-```
-curl -sLf https://spacevim.org/install.sh | bash
-```
-
-To update plugins:
-```
-:call dein#update()
-```
-
-To remove disabled plugins:
-```
-:call map(dein#check_clean(), "delete(v:val, 'rf')")
-```
-
-To uninstall:
-```
-curl -sLf https://spacevim.org/install.sh | bash -s -- uninstall
 ```
 
 ## TODO

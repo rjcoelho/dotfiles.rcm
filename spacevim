@@ -1,0 +1,27 @@
+" The command Layer and Exclude are vaild in the function Layers().
+function! Layers()
+    Layer 'fzf'
+    Layer 'tmux'
+    Layer 'better-defaults'
+    Layer 'auto-completion'
+    Layer 'erlang'
+    Layer 'git'
+    Layer 'programming'
+    Layer 'airline'
+endfunction
+
+" Put your private plugins here.
+function! UserInit()
+    " Space has been set as the default leader key,
+    " let g:spacevim_leader = "<\Space>"
+    " let g:spacevim_localleader = ','
+
+    " Install private plugins
+endfunction
+
+" Put your costom configurations here, e.g., change the colorscheme.
+function! UserConfig()
+    " If you enable airline layer and have installed the powerline fonts, set it here.
+    " let g:airline_powerline_fonts=1
+    " color desert
+endfunction
