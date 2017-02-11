@@ -77,7 +77,10 @@ yum|apt-get|pacman ctags
 Generate ```.git/tags``` on checkout [ctags with git](https://github.com/scottsbaldwin/effortless-ctags-with-git):
 ```
 git config --global init.templatedir '~/.git_template'
-cd <REPO> ; chmod +x .git/hooks/* ; git init
+cd <REPO>
+echo "#!/bin/sh\n.git/hooks/ctags >/dev/null 2>&1 &" > .git/post_checkout
+chmod +x .git/hooks/*
+git init
 ```
 
 Using [ctags in vim](https://andrew.stwrt.ca/posts/vim-ctags/)
