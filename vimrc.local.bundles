@@ -1,0 +1,2 @@
+set runtimepath+=$HOME
+runtime! .vimrc.d/*.bundles

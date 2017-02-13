@@ -17,6 +17,7 @@ function! UserInit()
     " let g:spacevim_localleader = ','
 
     " Install private plugins
+    Plug 'edkolev/tmuxline.vim'
 endfunction
 
 " Put your costom configurations here, e.g., change the colorscheme.

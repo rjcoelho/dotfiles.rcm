@@ -1,1 +1,3 @@
-# Add your local tmux config here
+#if-shell "test -f ~/.tmux.d/airline.conf" "source ~/.tmux.d/airline.conf"
+if-shell "test -f ~/.tmux.d/airline_spacevim.conf" "source ~/.tmux.d/airline_spacevim.conf"
+if-shell "test -f ~/.tmux.d/tpm.conf" "source ~/.tmux.d/tpm.conf"

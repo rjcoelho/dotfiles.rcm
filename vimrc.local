@@ -1,3 +1,2 @@
-for fpath in split(globpath('~/.vimrc.d/', '*.vim'), '\n')
-  exe 'source' fpath
-endfor
+set runtimepath+=$HOME
+runtime! .vimrc.d/*.vim

@@ -145,4 +145,4 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 ## TODO
 - Maybe drop prezto? or replace with zsh-users/prezto
-- Slimdown spacevim by removing all layers by default
+- Maybe merge spacevim into bootstrap

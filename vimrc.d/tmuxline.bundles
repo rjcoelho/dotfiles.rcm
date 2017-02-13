@@ -1,0 +1,2 @@
+" usage: :Tmuxline airline and :TmuxlineSnapshot [file]
+Plug 'edkolev/tmuxline.vim'
