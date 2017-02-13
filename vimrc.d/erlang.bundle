@@ -1,6 +1,0 @@
-" see https://github.com/vim-erlang
-"Plug 'jimenezrick/vimerl' "DEPRECATED, USE BELOW INSTEAD
-Plug 'vim-erlang/vim-erlang-omnicomplete'
-Plug 'vim-erlang/vim-erlang-compiler'
-Plug 'vim-erlang/vim-erlang-skeletons'
-"Plug 'vim-erlang/vim-erlang-runtime'
