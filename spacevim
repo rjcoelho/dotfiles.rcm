@@ -17,11 +17,12 @@ function! UserInit()
     " let g:spacevim_localleader = ','
 
     " Install private plugins
+    Plug 'edkolev/tmuxline.vim'
 endfunction
 
 " Put your costom configurations here, e.g., change the colorscheme.
 function! UserConfig()
     " If you enable airline layer and have installed the powerline fonts, set it here.
     " let g:airline_powerline_fonts=1
-    " color desert
+    let g:airline_theme = 'powerlineish'
 endfunction
