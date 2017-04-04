@@ -6,8 +6,9 @@ function! Layers()
     Layer 'auto-completion'
     Layer 'erlang'
     Layer 'git'
-    Layer 'programming'
-    Layer 'airline'
+    "Layer 'programming'
+    "Layer 'airline'
+    "Layer 'lightline'
 endfunction
 
 " Put your private plugins here.
@@ -18,11 +19,13 @@ function! UserInit()
 
     " Install private plugins
     Plug 'edkolev/tmuxline.vim'
+    "Plug 'liuchengxu/eleline.vim'
 endfunction
 
-" Put your costom configurations here, e.g., change the colorscheme.
+" Put your custom configurations here, e.g., change the colorscheme.
 function! UserConfig()
     " If you enable airline layer and have installed the powerline fonts, set it here.
     " let g:airline_powerline_fonts=1
     let g:airline_theme = 'powerlineish'
+    "let g:airline_extensions = []
 endfunction

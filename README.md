@@ -57,7 +57,13 @@ vim/nvim +PlugClean! +qall
 
 To uninstall (vim distribution):
 ```
-rm -f ~/.vimrc ~/.vim ~/.space-vim
+rm -rf ~/.vimrc ~/.vim ~/.space-vim
+```
+
+To check vim startup time:
+```
+vim/nvim --startuptime vim.log +qall
+cat vim.log
 ```
 
 ### Git-templates
@@ -144,5 +150,5 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 
 ## TODO
-- Maybe drop prezto? or replace with zsh-users/prezto
+- Maybe drop prezto?
 - Maybe merge spacevim into bootstrap
