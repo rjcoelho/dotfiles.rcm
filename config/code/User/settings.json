@@ -4,6 +4,7 @@
 // editor
     "editor.renderIndentGuides": true,
     "editor.rulers": [80, 120],
+    "editor.minimap.enabled": true,
 
 // extensions
     "extensions.autoUpdate": true,
@@ -37,6 +38,7 @@
 
 // erlang
     "erlang.enableExperimentalAutoComplete": true,
-    "window.zoomLevel": 0
+    "window.zoomLevel": -1,
+    "workbench.colorTheme": "Monokai"
 }
 
