@@ -4,7 +4,7 @@ source "${HOME}/.zgen/zgen.zsh"
 if ! zgen saved; then
     echo "Creating a zgen save"
 
-    ZGEN_PREZTO_REPO=zsh-users/prezto
+    #ZGEN_PREZTO_REPO=zsh-users/prezto
     #ZGEN_PREZTO_LOAD_DEFAULT=0 # 'environment' 'terminal' 'editor' 'history' 'directory' 'spectrum' 'utility' 'completion' 'prompt'
     zgen prezto
 
@@ -23,14 +23,13 @@ if ! zgen saved; then
     zgen prezto osx
     zgen prezto autosuggestions
     zgen prezto tmux
-    zgen prezto autoenv
 
     # install some rc prezto files
     ln -sf "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile" "${ZDOTDIR:-$HOME}/.zprofile"
     ln -sf "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" "${ZDOTDIR:-$HOME}/.zshenv"
 
     # plugins
-    #zgen load URL
+    zgen load horosgrisa/autoenv
 
     # save all to init script
     zgen save

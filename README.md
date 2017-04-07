@@ -150,5 +150,6 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 
 ## TODO
-- Maybe drop prezto?
-- Maybe merge spacevim into bootstrap
+- Maybe drop prezto (anti-pattern)
+- Maybr drop space-vim (anti-pattern)
+- Maybe replace autoenv by direnv (fish?)
