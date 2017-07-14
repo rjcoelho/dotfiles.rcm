@@ -1,5 +1,9 @@
 [alias]
     pull-force = "!git fetch ; git reset --hard @{u}"
     rm-local-tags = "!git fetch --prune origin '+refs/tags/*:refs/tags/*'"
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
 [init]
     templatedir = ~/.git_template
