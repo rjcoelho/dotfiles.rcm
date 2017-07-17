@@ -11,6 +11,10 @@ if ! zgen saved; then
     zgen load zsh-users/zsh-autosuggestions
     zgen load zsh-users/zsh-completions
 
+    # https://github.com/Tarrasch/zsh-functional
+    # https://github.com/willghatch/zsh-saneopt
+    # https://github.com/unixorn/git-extra-commands
+
     # save all to init script
     zgen save
 fi
