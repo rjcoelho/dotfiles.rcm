@@ -23,6 +23,34 @@ cd rcm-1.3.0
 ./Configure && make && sudo make install
 ```
 
+### [Vim](http://www.vim.org/):
+
+To generate a new vimrc using [Vimbootstrap](http://vim-bootstrap.com):
+```
+curl 'http://vim-bootstrap.com/generate.vim' --data 'editor=vim' > ~/.vimrc
+```
+
+Update plugins:
+```
+vim +PlugInstall +qall
+```
+
+Cleanup/remove unused directories/plugins:
+```
+vim +PlugClean! +qall
+```
+
+To uninstall (vim distribution):
+```
+rm -rf ~/.vimrc ~/.vim
+```
+
+To check vim startup time:
+```
+vim --startuptime vim.log +qall
+cat vim.log
+```
+
 ### [Neovim](https://github.com/neovim/neovim):
 
 Install neovim (non-OSX):
@@ -39,31 +67,6 @@ To use your existing Vim configurations:
 ```
 ln -sf ~/.vim ~/.config/nvim
 ln -sf ~/.vimrc ~/.config/nvim/init.vim
-```
-
-### [Spacevim](https://github.com/liuchengxu/space-vim)
-
-Install spacevim (vim distribution):
-```
-git clone https://github.com/liuchengxu/space-vim.git ~/.space-vim
-ln -sf ~/.space-vim/init.vim ~/.vimrc
-vim/nvim +PlugInstall +qall
-```
-
-Cleanup/remove unused directories/plugins:
-```
-vim/nvim +PlugClean! +qall
-```
-
-To uninstall (vim distribution):
-```
-rm -rf ~/.vimrc ~/.vim ~/.space-vim
-```
-
-To check vim startup time:
-```
-vim/nvim --startuptime vim.log +qall
-cat vim.log
 ```
 
 ### Git-templates
@@ -150,6 +153,5 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 
 ## TODO
-- Maybe drop prezto (anti-pattern)
-- Maybr drop space-vim (anti-pattern)
+- Delete spaceemacs
 - Maybe replace autoenv by direnv (fish?)

@@ -1,0 +1,11 @@
+Plug 'vim-erlang/vim-erlang-omnicomplete'
+" Generate tags
+Plug 'vim-erlang/vim-erlang-tags', { 'on': 'ErlangTags' }
+" Syntax checking and compiler on save
+Plug 'vim-erlang/vim-erlang-compiler'
+" Indentation and syntax (included in vim-polyglot)
+"Plug 'vim-erlang/vim-erlang-runtime'
+" Generic templates
+Plug 'vim-erlang/vim-erlang-skeletons'
+" Motions and text objects
+Plug 'vim-erlang/erlang-motions.vim'
