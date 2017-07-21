@@ -148,3 +148,6 @@ fi
 ## TODO
 - Maybe replace autoenv by direnv (fish?)
 - Review zsh plugins
+    # https://github.com/Tarrasch/zsh-functional
+    # https://github.com/unixorn/git-extra-commands
+

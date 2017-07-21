@@ -11,21 +11,17 @@ if ! source "$HOME/.zgen/init.zsh"; then
     zgen load horosgrisa/autoenv
     zgen load miekg/lean
 
+    # sensible defaults
+    zgen load rjcoelho/zsh-saneopt
+
+    # fish shell like syntax highlighting, shell's history search and autosuggestions
     zgen load zsh-users/zsh-syntax-highlighting
     zgen load zsh-users/zsh-history-substring-search
     zgen load zsh-users/zsh-autosuggestions
-    zgen load zsh-users/zsh-completions
 
-    # https://github.com/Tarrasch/zsh-functional
-    # https://github.com/willghatch/zsh-saneopt
-    # https://github.com/unixorn/git-extra-commands
+    # additional completion definitions
+    zgen load zsh-users/zsh-completions
 
     # save all to init script
     zgen save
 fi
-
-#TODO: move elsewhere zsh-sensible ?
-# some prompts need it
-setopt prompt_subst
-# usability
-setopt auto_cd
