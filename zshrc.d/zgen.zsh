@@ -1,7 +1,12 @@
+# see https://github.com/tarjoilija/zgen/issues/46
+lazy_source () {
+    eval "$1 () { [ -f $2 ] && source $2 && $1 \$@ }"
+}
+
 # see https://github.com/tarjoilija/zgen
-source "${HOME}/.zgen/zgen.zsh"
+lazy_source zgen ${HOME}/.zgen/zgen.zsh
 # if the init script doesn't exist
-if ! zgen saved; then
+if ! source "$HOME/.zgen/init.zsh"; then
     # see https://github.com/unixorn/awesome-zsh-plugins
     zgen load horosgrisa/autoenv
     zgen load miekg/lean
