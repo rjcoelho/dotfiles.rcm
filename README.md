@@ -145,13 +145,6 @@ if [[ "$OSTYPE" == darwin* ]]; then
 fi
 ```
 
-### [Spacemacs](http://spacemacs.org/)
-
-Install spacemacs (emacs distribution):
-```
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-```
-
 ## TODO
-- Delete spaceemacs
 - Maybe replace autoenv by direnv (fish?)
+- Review zsh plugins
