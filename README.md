@@ -10,7 +10,8 @@
 ## Install:
 ```
 git clone --recursive https://github.com/rjcoelho/dotfiles.rcm ~/.dotfiles.rcm
-rcup -d ~/.dotfiles.rcm -x README.md -x LICENSE
+cd ~/.dotfiles.rcm
+rcup -d `pwd` -x README.md -x LICENSE
 ```
 
 ### Rcm:

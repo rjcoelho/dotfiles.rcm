@@ -5,5 +5,3 @@
     br = branch
     ci = commit
     st = status
-[init]
-    templatedir = ~/.git_template
