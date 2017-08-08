@@ -1,5 +1,5 @@
 [submodule "autoenv"]
-	path = autoenv
+	path = bashrc.d/autoenv
 	url = https://github.com/kennethreitz/autoenv
 [submodule "zgen"]
 	path = zgen
@@ -7,3 +7,6 @@
 [submodule "tmux.d/plugins/tpm"]
 	path = tmux.d/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "bash-sensible"]
+	path = bashrc.d/sensible
+	url = https://github.com/mrzool/bash-sensible

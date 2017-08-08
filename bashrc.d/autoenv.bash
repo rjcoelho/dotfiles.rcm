@@ -1,3 +1,3 @@
 # see https://github.com/kennethreitz/autoenv
-[ -f "${HOME}/.autoenv/activate.sh" ] && \
-    source ~/.autoenv/activate.sh
+[ -f "${HOME}/.bashrc.d/autoenv/activate.sh" ] && \
+    source ~/.bashrc.d/autoenv/activate.sh
