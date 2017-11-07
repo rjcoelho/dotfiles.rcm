@@ -5,3 +5,6 @@
     br = branch
     ci = commit
     st = status
+[submodule]
+    fetchJobs = 4
+
