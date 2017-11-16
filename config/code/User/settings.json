@@ -41,6 +41,9 @@
 // erlang
     "erlang.enableExperimentalAutoComplete": true,
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Monokai"
+    "workbench.colorTheme": "Monokai",
+
+// gitlens
+    "gitlens.gitExplorer.files.layout": "list"
 }
 
