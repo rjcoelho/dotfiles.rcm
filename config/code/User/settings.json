@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
 // window
-    "window.nativeTabs": true,
+    "window.nativeTabs": false,
 
 // editor
     "editor.renderIndentGuides": true,
@@ -44,6 +44,17 @@
     "workbench.colorTheme": "Monokai",
 
 // gitlens
-    "gitlens.gitExplorer.files.layout": "list"
+    "gitlens.gitExplorer.files.layout": "list",
+    "workbench.panel.location": "bottom",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    }
 }
 

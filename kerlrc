@@ -4,7 +4,7 @@ export KERL_DEFAULT_INSTALL_DIR=$KERL_BASE_DIR/installs
 #export KERL_BUILD_BACKEND=git
 #export KERL_ENABLE_PROMPT=true
 export KERL_CONFIGURE_OPTIONS="--enable-hipe --without-wx --enable-builtin-zlib"
-export KERL_DEFAULT_ACTIVATION=$KERL_DEFAULT_INSTALL_DIR/17.5/activate
+export KERL_DEFAULT_ACTIVATION=$KERL_DEFAULT_INSTALL_DIR/19.3/activate
 export KERL_BUILD_PLT=true
 export KERL_DOCSH_DOT_ERLANG=exists
 
