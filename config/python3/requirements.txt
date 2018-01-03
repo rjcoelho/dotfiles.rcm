@@ -1,0 +1,11 @@
+awacs==0.7.2
+cfn-flip==0.2.4.post2
+greenlet==0.4.12
+mps-youtube==0.2.7.1
+msgpack-python==0.4.8
+neovim==0.1.13
+pafy==0.5.3.1
+PyYAML==3.12
+six==1.11.0
+troposphere==2.0.2
+youtube-dl==2017.12.31

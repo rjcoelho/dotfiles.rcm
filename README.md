@@ -146,15 +146,25 @@ if [[ "$OSTYPE" == darwin* ]]; then
 fi
 ```
 
-### [AWS-fuzzy-finder](https://github.com/pmazurek/aws-fuzzy-finder)
+### [Python/pip](https://pip.pypa.io/en/stable/quickstart/)
 
-Install AWS-fuzzy-finder:
+On OSX install python2 and python3 using brew but don't override OSX's python. See [Homebrew and python](https://docs.brew.sh/Homebrew-and-Python.html).
+
+On OSX use ```python2/3 -m pip```, on non-OSX use ```pip```.
+
+Install python packages using pip:
 ```
-sudo pip install aws-fuzzy-finder
+python2 -m pip install -r ~/.config/python2/requirements.txt
+python3 -m pip install -r ~/.config/python3/requirements.txt
+```
+
+Generate/Update packages using pip:
+```
+python2 -m pip freeze >! ~/.config/python2/requirements.txt
+python3 -m pip freeze >! ~/.config/python3/requirements.txt
 ```
 
 ## TODO
-- Pip install script ?
 - Maybe replace autoenv by direnv (fish?)
 - Review zsh plugins
     # https://github.com/Tarrasch/zsh-functional
