@@ -146,7 +146,15 @@ if [[ "$OSTYPE" == darwin* ]]; then
 fi
 ```
 
+### [AWS-fuzzy-finder](https://github.com/pmazurek/aws-fuzzy-finder)
+
+Install AWS-fuzzy-finder:
+```
+sudo pip install aws-fuzzy-finder
+```
+
 ## TODO
+- Pip install script ?
 - Maybe replace autoenv by direnv (fish?)
 - Review zsh plugins
     # https://github.com/Tarrasch/zsh-functional
