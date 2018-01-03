@@ -129,6 +129,11 @@ Upgrade brewfile:
 brew bundle dump --file=~/.config/brew/Brewfile --force
 ```
 
+Install xcode command line tools (needed by some brew formulas):
+```
+xcode-select --install
+```
+
 ### [Fzf](https://github.com/junegunn/fzf)
 
 Install (fzf (non-OSX):
