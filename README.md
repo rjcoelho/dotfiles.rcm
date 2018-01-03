@@ -169,6 +169,12 @@ python2 -m pip freeze >! ~/.config/python2/requirements.txt
 python3 -m pip freeze >! ~/.config/python3/requirements.txt
 ```
 
+When updating python, pip/setuptools may beed to be updated:
+```
+python2 -m pip install --upgrade pip setuptools wheel
+python3 -m pip install --upgrade pip setuptools wheel
+```
+
 ## TODO
 - Maybe replace autoenv by direnv (fish?)
 - Review zsh plugins
