@@ -1,9 +1,18 @@
-# see https://github.com/tarjoilija/zgen
-source "${HOME}/.zgen/zgen.zsh"
-# if the init script doesn't exist
-if ! zgen saved; then
-    echo "Creating a zgen save"
+ZGEN_USE_PREZTO=1
 
+function zgen_without_zprezto() {
+    # see https://github.com/unixorn/awesome-zsh-plugins
+    zgen load zpm-zsh/autoenv
+    zgen load miekg/lean
+    #zgen load sfischer13/zsh-sensible
+    zgen load rjcoelho/zsh-saneopt
+    zgen load zsh-users/zsh-syntax-highlighting
+    zgen load zsh-users/zsh-history-substring-search
+    zgen load zsh-users/zsh-autosuggestions
+    zgen load zsh-users/zsh-completions
+}
+
+function zgen_using_zprezto() {
     # default modules
     zgen prezto
     #ZGEN_PREZTO_LOAD_DEFAULT=0 # 'environment' 'terminal' 'editor' 'history' 'directory' 'spectrum' 'utility' 'completion' 'prompt'
@@ -30,6 +39,15 @@ if ! zgen saved; then
 
     # see https://github.com/unixorn/awesome-zsh-plugins
     zgen load zpm-zsh/autoenv
+}
+
+# see https://github.com/tarjoilija/zgen
+source "${HOME}/.zgen/zgen.zsh"
+# if the init script doesn't exist
+if ! zgen saved; then
+    echo "Creating a zgen save"
+
+    [[ $ZGEN_USE_PREZTO == 1 ]] && zgen_using_zprezto || zgen_without_zprezto
 
     # save all to init script
     zgen save

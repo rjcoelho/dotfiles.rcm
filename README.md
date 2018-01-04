@@ -177,7 +177,9 @@ python3 -m pip install --upgrade pip setuptools wheel
 
 ## TODO
 - Maybe replace autoenv by direnv (fish?)
-- Review zsh plugins
+- Review zsh plugins and maybe replace zprezto with (miekg/lean, rjcoelho/zsh-saneopt, zsh-users/zsh-syntax-highlighting, zsh-users/zsh-history-substring-search, zsh-users/zsh-autosuggestions, zsh-users/zsh-completions)
+    # https://github.com/unixorn/awesome-zsh-plugins
+    # https://github.com/laurenkt/zsh-vimto
     # https://github.com/Tarrasch/zsh-functional
     # https://github.com/unixorn/git-extra-commands
 
