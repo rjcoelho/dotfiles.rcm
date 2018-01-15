@@ -134,6 +134,14 @@ Install xcode command line tools (needed by some brew formulas):
 xcode-select --install
 ```
 
+### [Bundler](http://bundler.io/)
+
+Install gem's bundler (ruby package manager)
+```
+gem install bundler
+bundle install --gemfile=~/.config/ruby/Gemfile
+```
+
 ### [Fzf](https://github.com/junegunn/fzf)
 
 Install (fzf (non-OSX):
