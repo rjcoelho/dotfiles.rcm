@@ -1,3 +1,2 @@
 source 'https://rubygems.org'
 gem 'teamocil'
-gem 'ec2ssh'
