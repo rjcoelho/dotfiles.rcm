@@ -115,6 +115,13 @@ sudo curl -s https://raw.githubusercontent.com/clvv/fasd/master/fasd -o /usr/loc
 sudo chmod +x /usr/local/bin/fasd
 ```
 
+### [Node/npm](https://www.npmjs.com/)
+
+Install Node/NPM packages
+```
+~/.config/node/install-npm-packages.sh
+```
+
 ### [OSX/Brew](http://brew.sh/)
 
 Install brew and bundles:
