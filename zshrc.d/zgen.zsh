@@ -2,7 +2,6 @@ ZGEN_USE_PREZTO=1
 
 function zgen_without_zprezto() {
     # see https://github.com/unixorn/awesome-zsh-plugins
-    zgen load zpm-zsh/autoenv
     zgen load miekg/lean
     #zgen load sfischer13/zsh-sensible
     zgen load rjcoelho/zsh-saneopt
