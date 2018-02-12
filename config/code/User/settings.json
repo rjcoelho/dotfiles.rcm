@@ -27,12 +27,6 @@
             "*.config": "erlang"
         },
 
-// jiraSearch
-    "jiraSearch.url":"https://jira.miniclip.com",
-    "jiraSearch.username":"rui.coelho",
-    //"jiraSearch.password":"XXXXXXX",
-    //"jiraSearch.jql" : "assignee={username} AND status=Open AND sprint in openSprints() ORDER BY created",
-
 // gitProjectManager
     "gitProjectManager.baseProjectsFolders": ["/Users/rui.coelho/Repos/"],
     "gitProjectManager.maxDepthRecursion": 1,
