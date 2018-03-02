@@ -45,10 +45,12 @@
         "suppressCommitNotFoundWarning": false,
         "suppressFileNotUnderSourceControlWarning": false,
         "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
+        "suppressLineUncommittedWarning": true,
         "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": true,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
-    }
+    },
+    "extensions.ignoreRecommendations": true
 }
 
