@@ -172,6 +172,14 @@ On OSX install python2 and python3 using brew but don't override OSX's python. S
 
 On OSX use ```python2/3 -m pip```, on non-OSX use ```pip```.
 
+Install python (on OSX):
+```
+brew install python@2
+export PATH="/usr/local/opt/python@2/bin:$PATH"
+#export PATH="/usr/local/opt/python@2/libexec/bin:$PATH" # default to python2
+brew install python@3
+```
+
 Install python packages using pip:
 ```
 python2 -m pip install -r ~/.config/python2/requirements.txt
@@ -189,6 +197,13 @@ When updating python, pip/setuptools may beed to be updated:
 python2 -m pip install --upgrade pip setuptools wheel
 python3 -m pip install --upgrade pip setuptools wheel
 ```
+
+Uninstall all pip packages:
+```
+python2 -m pip freeze | xargs python2 -m pip uninstall -y
+python3 -m pip freeze | xargs python3 -m pip uninstall -y
+```
+
 
 ## TODO
 - Review zsh plugins and maybe replace zprezto with (miekg/lean, rjcoelho/zsh-saneopt, zsh-users/zsh-syntax-highlighting, zsh-users/zsh-history-substring-search, zsh-users/zsh-autosuggestions, zsh-users/zsh-completions)
