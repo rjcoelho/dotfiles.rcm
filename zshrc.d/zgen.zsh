@@ -35,6 +35,8 @@ function zgen_using_zprezto() {
     # install some rc prezto files
     ln -sf "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile" "${ZDOTDIR:-$HOME}/.zprofile"
     ln -sf "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" "${ZDOTDIR:-$HOME}/.zshenv"
+
+    # see https://github.com/unixorn/awesome-zsh-plugins
 }
 
 # see https://github.com/tarjoilija/zgen
