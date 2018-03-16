@@ -31,6 +31,7 @@ function zgen_using_zprezto() {
     zgen prezto '*:*' color 'yes'
     #zgen prezto tmux:auto-start local 'yes'
     zgen prezto tmux:iterm integrate 'yes'
+    zgen prezto module:terminal auto-title 'yes'
 
     # install some rc prezto files
     ln -sf "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile" "${ZDOTDIR:-$HOME}/.zprofile"
