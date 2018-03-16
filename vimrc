@@ -1,4 +1,4 @@
-" vim-bootstrap 3340bde
+" vim-bootstrap 32075a8
 
 "*****************************************************************************
 "" Vim-PLug core
@@ -150,17 +150,9 @@ let g:session_command_aliases = 1
 "*****************************************************************************
 "" Visual Settings
 "*****************************************************************************
-"syntax on
-syntax sync minlines=200
+syntax on
 set ruler
 set number
-
-" see http://eduncan911.com/software/fix-slow-scrolling-in-vim-and-neovim.html
-set synmaxcol=128
-set lazyredraw
-set nocursorline
-set relativenumber
-"set scrolljump=5
 
 let no_buffers_menu=1
 if !exists('g:not_finish_vimplug')

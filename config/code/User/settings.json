@@ -1,7 +1,11 @@
 // Place your settings in this file to overwrite the default settings
 {
 // window
-    "window.nativeTabs": true,
+    "window.nativeTabs": false,
+    "window.zoomLevel": 0,
+
+// explorer
+    "explorer.confirmDelete": false,
 
 // editor
     "editor.renderIndentGuides": true,
@@ -10,6 +14,7 @@
 
 // extensions
     "extensions.autoUpdate": true,
+    "extensions.ignoreRecommendations": true,
 
 // search
     "search.exclude": {
@@ -27,12 +32,6 @@
             "*.config": "erlang"
         },
 
-// jiraSearch
-    "jiraSearch.url":"https://jira.miniclip.com",
-    "jiraSearch.username":"rui.coelho",
-    //"jiraSearch.password":"XXXXXXX",
-    //"jiraSearch.jql" : "assignee={username} AND status=Open AND sprint in openSprints() ORDER BY created",
-
 // gitProjectManager
     "gitProjectManager.baseProjectsFolders": ["/Users/rui.coelho/Repos/"],
     "gitProjectManager.maxDepthRecursion": 1,
@@ -40,7 +39,25 @@
 
 // erlang
     "erlang.enableExperimentalAutoComplete": true,
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Monokai"
+
+// workbench
+    "workbench.colorTheme": "Monokai",
+    "workbench.panel.location": "bottom",
+    "workbench.startupEditor": "newUntitledFile",
+
+// gitlens
+    "gitlens.gitExplorer.files.layout": "list",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": true,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": true,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "gitlens.keymap": "alternate"
 }
 

@@ -10,7 +10,8 @@
 ## Install:
 ```
 git clone --recursive https://github.com/rjcoelho/dotfiles.rcm ~/.dotfiles.rcm
-rcup -d ~/.dotfiles.rcm -x README.md -x LICENSE
+cd ~/.dotfiles.rcm
+rcup -d `pwd` -x README.md -x LICENSE
 ```
 
 ### Rcm:
@@ -21,6 +22,34 @@ curl -LO https://thoughtbot.github.io/rcm/dist/rcm-1.3.0.tar.gz
 tar -xvf rcm-1.3.0.tar.gz
 cd rcm-1.3.0
 ./Configure && make && sudo make install
+```
+
+### [Vim](http://www.vim.org/):
+
+To generate a new vimrc using [Vimbootstrap](http://vim-bootstrap.com):
+```
+curl 'http://vim-bootstrap.com/generate.vim' --data 'editor=vim' > ~/.vimrc
+```
+
+Update plugins:
+```
+vim +PlugInstall +qall
+```
+
+Cleanup/remove unused directories/plugins:
+```
+vim +PlugClean! +qall
+```
+
+To uninstall (vim distribution):
+```
+rm -rf ~/.vimrc ~/.vim
+```
+
+To check vim startup time:
+```
+vim --startuptime vim.log +qall
+cat vim.log
 ```
 
 ### [Neovim](https://github.com/neovim/neovim):
@@ -39,31 +68,6 @@ To use your existing Vim configurations:
 ```
 ln -sf ~/.vim ~/.config/nvim
 ln -sf ~/.vimrc ~/.config/nvim/init.vim
-```
-
-### [Spacevim](https://github.com/liuchengxu/space-vim)
-
-Install spacevim (vim distribution):
-```
-git clone https://github.com/liuchengxu/space-vim.git ~/.space-vim
-ln -sf ~/.space-vim/init.vim ~/.vimrc
-vim/nvim +PlugInstall +qall
-```
-
-Cleanup/remove unused directories/plugins:
-```
-vim/nvim +PlugClean! +qall
-```
-
-To uninstall (vim distribution):
-```
-rm -rf ~/.vimrc ~/.vim ~/.space-vim
-```
-
-To check vim startup time:
-```
-vim/nvim --startuptime vim.log +qall
-cat vim.log
 ```
 
 ### Git-templates
@@ -111,6 +115,13 @@ sudo curl -s https://raw.githubusercontent.com/clvv/fasd/master/fasd -o /usr/loc
 sudo chmod +x /usr/local/bin/fasd
 ```
 
+### [Node/npm](https://www.npmjs.com/)
+
+Install Node/NPM packages
+```
+~/.config/node/install-npm-packages.sh
+```
+
 ### [OSX/Brew](http://brew.sh/)
 
 Install brew and bundles:
@@ -123,6 +134,19 @@ brew bundle --path=~/.config/brew/Brewfile
 Upgrade brewfile:
 ```
 brew bundle dump --file=~/.config/brew/Brewfile --force
+```
+
+Install xcode command line tools (needed by some brew formulas):
+```
+xcode-select --install
+```
+
+### [Bundler](http://bundler.io/)
+
+Install gem's bundler (ruby package manager)
+```
+gem install bundler
+bundle install --gemfile=~/.config/ruby/Gemfile
 ```
 
 ### [Fzf](https://github.com/junegunn/fzf)
@@ -142,14 +166,54 @@ if [[ "$OSTYPE" == darwin* ]]; then
 fi
 ```
 
-### [Spacemacs](http://spacemacs.org/)
+### [Python/pip](https://pip.pypa.io/en/stable/quickstart/)
 
-Install spacemacs (emacs distribution):
+On OSX install python2 and python3 using brew but don't override OSX's python. See [Homebrew and python](https://docs.brew.sh/Homebrew-and-Python.html).
+
+On OSX use ```python2/3 -m pip```, on non-OSX use ```pip```.
+
+Install python (on OSX):
 ```
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+brew install python@2
+#export PATH="/usr/local/opt/python@2/bin:$PATH" # if you dont see python2/pip2
+#export PATH="/usr/local/opt/python@2/libexec/bin:$PATH" # default to python2
+brew install python@3
+```
+
+Install python packages using pip:
+```
+python2 -m pip install -r ~/.config/python2/requirements.txt
+python3 -m pip install -r ~/.config/python3/requirements.txt
+```
+
+Generate/Update packages using pip:
+```
+python2 -m pip freeze >! ~/.config/python2/requirements.txt
+python3 -m pip freeze >! ~/.config/python3/requirements.txt
+```
+
+When updating python, pip/setuptools may beed to be updated:
+```
+python2 -m pip install --upgrade pip setuptools wheel
+python3 -m pip install --upgrade pip setuptools wheel
+```
+
+Uninstall all pip packages:
+```
+python2 -m pip freeze | xargs python2 -m pip uninstall -y
+python3 -m pip freeze | xargs python3 -m pip uninstall -y
+```
+
+Upgrade all pip packages:
+```
+python2 -m pip freeze | cut -d '=' -f1 | python2 -m pip install --upgrade -r /dev/stdin
+python3 -m pip freeze | cut -d '=' -f1 | python3 -m pip install --upgrade -r /dev/stdin
 ```
 
 ## TODO
-- Maybe drop prezto (anti-pattern)
-- Maybr drop space-vim (anti-pattern)
-- Maybe replace autoenv by direnv (fish?)
+- Review zsh plugins and maybe replace zprezto with (miekg/lean, rjcoelho/zsh-saneopt, zsh-users/zsh-syntax-highlighting, zsh-users/zsh-history-substring-search, zsh-users/zsh-autosuggestions, zsh-users/zsh-completions)
+    # https://github.com/unixorn/awesome-zsh-plugins
+    # https://github.com/laurenkt/zsh-vimto
+    # https://github.com/Tarrasch/zsh-functional
+    # https://github.com/unixorn/git-extra-commands
+

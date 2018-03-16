@@ -1,0 +1,11 @@
+aws-fuzzy-finder==0.3.6
+boto3==1.3.1
+botocore==1.4.93
+click==6.6
+docutils==0.14
+futures==3.2.0
+jmespath==0.9.3
+protobuf==3.5.2
+python-dateutil==2.6.1
+s3transfer==0.1.13
+six==1.9.0
