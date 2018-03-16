@@ -5,5 +5,7 @@ click==6.6
 docutils==0.14
 futures==3.2.0
 jmespath==0.9.3
+protobuf==3.5.2
 python-dateutil==2.6.1
+s3transfer==0.1.13
 six==1.9.0

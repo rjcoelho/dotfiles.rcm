@@ -175,7 +175,7 @@ On OSX use ```python2/3 -m pip```, on non-OSX use ```pip```.
 Install python (on OSX):
 ```
 brew install python@2
-export PATH="/usr/local/opt/python@2/bin:$PATH"
+#export PATH="/usr/local/opt/python@2/bin:$PATH" # if you dont see python2/pip2
 #export PATH="/usr/local/opt/python@2/libexec/bin:$PATH" # default to python2
 brew install python@3
 ```
@@ -204,6 +204,11 @@ python2 -m pip freeze | xargs python2 -m pip uninstall -y
 python3 -m pip freeze | xargs python3 -m pip uninstall -y
 ```
 
+Upgrade all pip packages:
+```
+python2 -m pip freeze | cut -d '=' -f1 | python2 -m pip install --upgrade -r /dev/stdin
+python3 -m pip freeze | cut -d '=' -f1 | python3 -m pip install --upgrade -r /dev/stdin
+```
 
 ## TODO
 - Review zsh plugins and maybe replace zprezto with (miekg/lean, rjcoelho/zsh-saneopt, zsh-users/zsh-syntax-highlighting, zsh-users/zsh-history-substring-search, zsh-users/zsh-autosuggestions, zsh-users/zsh-completions)
