@@ -1,4 +1,4 @@
-" vim-bootstrap 32075a8
+" vim-bootstrap b990cad
 
 "*****************************************************************************
 "" Vim-PLug core
@@ -136,9 +136,13 @@ set nobackup
 set noswapfile
 
 set fileformats=unix,dos,mac
-set showcmd
+
 if g:vim_bootstrap_editor == 'vim'
-  set shell=/bin/sh
+  if exists('$SHELL')
+      set shell=$SHELL
+  else
+      set shell=/bin/sh
+  endif
 endif
 
 " session management
@@ -254,7 +258,7 @@ let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 50
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <F2> :NERDTreeFind<CR>
-noremap <F3> :NERDTreeToggle<CR>
+nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
 " grep.vim
 nnoremap <silent> <leader>f :Rgrep<CR>
