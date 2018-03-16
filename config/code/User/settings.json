@@ -2,6 +2,10 @@
 {
 // window
     "window.nativeTabs": false,
+    "window.zoomLevel": 0,
+
+// explorer
+    "explorer.confirmDelete": false,
 
 // editor
     "editor.renderIndentGuides": true,
@@ -10,6 +14,7 @@
 
 // extensions
     "extensions.autoUpdate": true,
+    "extensions.ignoreRecommendations": true,
 
 // search
     "search.exclude": {
@@ -34,12 +39,14 @@
 
 // erlang
     "erlang.enableExperimentalAutoComplete": true,
-    "window.zoomLevel": 0,
+
+// workbench
     "workbench.colorTheme": "Monokai",
+    "workbench.panel.location": "bottom",
+    "workbench.startupEditor": "newUntitledFile",
 
 // gitlens
     "gitlens.gitExplorer.files.layout": "list",
-    "workbench.panel.location": "bottom",
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -51,6 +58,6 @@
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
-    "extensions.ignoreRecommendations": true
+    "gitlens.keymap": "alternate"
 }
 
