@@ -151,7 +151,7 @@ bundle install --gemfile=~/.config/ruby/Gemfile
 
 ### [Fzf](https://github.com/junegunn/fzf)
 
-Install (fzf (non-OSX):
+Install fzf (non-OSX):
 ```
 sudo git clone --depth 1 https://github.com/junegunn/fzf.git /usr/local/opt/fzf
 sudo /usr/local/opt/fzf/install --key-bindings --completion --no-update-rc
@@ -208,6 +208,18 @@ Upgrade all pip packages:
 ```
 python2 -m pip freeze | cut -d '=' -f1 | python2 -m pip install --upgrade -r /dev/stdin
 python3 -m pip freeze | cut -d '=' -f1 | python3 -m pip install --upgrade -r /dev/stdin
+```
+
+### [Newsboat](https://github.com/newsboat/newsboat)
+
+Export OPML form feedly (see https://blog.feedly.com/opml/)
+```
+open https://feedly.com/i/opml
+```
+
+Import OPML from feedly
+```
+newsboat -i ~/.config/rss/feedly.opml
 ```
 
 ### TODO

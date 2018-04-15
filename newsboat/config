@@ -1,0 +1,4 @@
+browser $BROWSER
+auto-reload yes
+reload-time 30
+
