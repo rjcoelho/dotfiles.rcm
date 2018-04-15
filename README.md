@@ -210,7 +210,7 @@ python2 -m pip freeze | cut -d '=' -f1 | python2 -m pip install --upgrade -r /de
 python3 -m pip freeze | cut -d '=' -f1 | python3 -m pip install --upgrade -r /dev/stdin
 ```
 
-## TODO
+### TODO
 - Review zsh plugins and maybe replace zprezto with (miekg/lean, rjcoelho/zsh-saneopt, zsh-users/zsh-syntax-highlighting, zsh-users/zsh-history-substring-search, zsh-users/zsh-autosuggestions, zsh-users/zsh-completions)
     # https://github.com/unixorn/awesome-zsh-plugins
     # https://github.com/laurenkt/zsh-vimto
