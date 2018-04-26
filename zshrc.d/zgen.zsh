@@ -9,7 +9,7 @@ function zgen_without_zprezto() {
     zgen load zsh-users/zsh-history-substring-search
     zgen load zsh-users/zsh-autosuggestions
     zgen load zsh-users/zsh-completions
-    zgen load laurenkt/zsh-vimto
+    #zgen load laurenkt/zsh-vimto
 }
 
 function zgen_using_zprezto() {
@@ -26,7 +26,7 @@ function zgen_using_zprezto() {
     #zgen prezto tmux
 
     # zgen options
-    zgen prezto editor key-bindings 'vi' # emacs|vi
+    #zgen prezto editor key-bindings 'vi' # emacs|vi
     zgen prezto prompt theme 'sorin' # default to sorin
     zgen prezto utility:ls color 'yes'
     zgen prezto '*:*' color 'yes'
