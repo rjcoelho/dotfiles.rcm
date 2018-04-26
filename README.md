@@ -171,6 +171,10 @@ if [[ "$OSTYPE" == darwin* ]]; then
 fi
 ```
 
+Generate VSCode extensions list, see [VS Code Extension Marketplace](http://go.microsoft.com/fwlink/?LinkId=827846):
+```
+code --list-extensions | jq '. | split("\n") | map(select(length > 0)) | {recomendations: .} ' -Rs >! $HOME/.config/Code/User/extensions.json
+```
 ### [Python/pip](https://pip.pypa.io/en/stable/quickstart/)
 
 On OSX install python2 and python3 using brew but don't override OSX's python. See [Homebrew and python](https://docs.brew.sh/Homebrew-and-Python.html).

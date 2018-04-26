@@ -32,13 +32,10 @@
             "*.config": "erlang"
         },
 
-// gitProjectManager
-    "gitProjectManager.baseProjectsFolders": ["/Users/rui.coelho/Repos/"],
-    "gitProjectManager.maxDepthRecursion": 1,
-    "gitProjectManager.storeRepositoriesBetweenSessions": true,
-
-// erlang
-    "erlang.enableExperimentalAutoComplete": true,
+// telemetry
+// see https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-telemetry-reporting
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
 
 // workbench
     "workbench.colorTheme": "Monokai",
@@ -51,7 +48,15 @@
     "terminal.integrated.scrollback": 5000,
     "terminal.integrated.rightClickCopyPaste": true,
 
-// media player
+// ext gitProjectManager
+    "gitProjectManager.baseProjectsFolders": ["/Users/rui.coelho/Repos/"],
+    "gitProjectManager.maxDepthRecursion": 1,
+    "gitProjectManager.storeRepositoriesBetweenSessions": true,
+
+// ext erlang
+    "erlang.enableExperimentalAutoComplete": true,
+
+// ext media player (TODO: missing filename)
     "media.player": {
         "players": [
             {
@@ -64,13 +69,13 @@
         ]
     },
 
-// todo
+// ext todo
     "todo-tree.regex":  "(TODO|FIXME)",
     "todo-tree.globs": ["!_build/**"],
     "todo-tree.flat": true,
     "todo-tree.expanded": true,
 
-// gitlens
+// ext gitlens
     "gitlens.gitExplorer.files.layout": "list",
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
@@ -84,6 +89,15 @@
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
-    "gitlens.keymap": "chorded"
+    "gitlens.keymap": "chorded",
+
+// ext codebucket
+    "codebucket.bitbucketServerHosts": [
+        {
+            "webHost": "https://stash.miniclip.com",
+            "gitHost": "stash.miniclip.com:7999"
+        }
+    ],
+    "gitlens.historyExplorer.enabled": true
 }
 
