@@ -122,6 +122,11 @@ Install Node/NPM packages
 ~/.config/node/install-npm-packages.sh
 ```
 
+List top-level global installed NPM packages
+```
+npm ls -g --depth 1
+```
+
 ### [OSX/Brew](http://brew.sh/)
 
 Install brew and bundles:
