@@ -1,19 +1,15 @@
 {
   "recomendations": [
     "DanielThielking.aws-cloudformation-yaml",
-    "Gruntfuggly.todo-tree",
-    "GuardRex.status-bar-tasks",
     "KnisterPeter.vscode-jira",
-    "SirTori.indenticator",
     "ajhyndman.jslint",
     "bokuweb.vscode-git-grep",
     "christian-kohler.path-intellisense",
-    "chrmarti.regex",
+    "DavidAnson.vscode-markdownlint",
     "deerawan.vscode-dash",
     "eamodio.gitlens",
-    "fallenwood.vimL",
     "felipecaputo.git-project-manager",
-    "jmMeessen.jenkins-declarative-support",
+    "Gruntfuggly.todo-tree",
     "mjmcloug.vscode-elixir",
     "mkloubert.vs-media-player",
     "mohsen1.prettify-json",
@@ -23,10 +19,8 @@
     "ryu1kn.partial-diff",
     "secanis.jenkinsfile-support",
     "spacek33z.vscode-open-in-gitfork",
-    "spywhere.now-playing",
     "vscodevim.vim",
     "waderyan.gitblame",
-    "ziyasal.vscode-open-in-github",
     "zxh404.vscode-proto3"
   ]
 }

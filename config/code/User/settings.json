@@ -55,6 +55,7 @@
 
 // ext erlang
     "erlang.enableExperimentalAutoComplete": true,
+    "erlang.codeLensEnabled": true,
 
 // ext media player (TODO: missing filename)
     "media.player": {
@@ -90,6 +91,8 @@
         "suppressWelcomeNotice": true
     },
     "gitlens.keymap": "chorded",
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.codeLens.enabled": false,
 
 // ext codebucket
     "codebucket.bitbucketServerHosts": [
@@ -97,7 +100,6 @@
             "webHost": "https://stash.miniclip.com",
             "gitHost": "stash.miniclip.com:7999"
         }
-    ],
-    "gitlens.historyExplorer.enabled": true
+    ]
 }
 
