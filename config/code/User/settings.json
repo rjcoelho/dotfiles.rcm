@@ -54,8 +54,8 @@
     "gitProjectManager.storeRepositoriesBetweenSessions": true,
 
 // ext erlang
-    "erlang.enableExperimentalAutoComplete": true,
     "erlang.codeLensEnabled": true,
+    "erlang.verbose": false,
 
 // ext media player (TODO: missing filename)
     "media.player": {
