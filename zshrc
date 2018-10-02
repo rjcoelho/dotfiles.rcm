@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#zmodload zsh/zprof
+
 export SHELL_EXTENSION=zsh
 
 # see https://chr4.org/blog/2014/09/10/conf-dot-d-like-directories-for-zsh-slash-bash-dotfiles/
@@ -13,3 +15,5 @@ if [ -d $HOME/.rc.d ]; then
         source $file
     done
 fi
+
+#zprof
