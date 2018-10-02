@@ -11,6 +11,8 @@
     "editor.renderIndentGuides": true,
     "editor.rulers": [80, 120],
     "editor.minimap.enabled": true,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Menlo, Fira Code, Monaco, 'Courier New', monospace",
 
 // extensions
     "extensions.autoUpdate": true,
@@ -32,6 +34,12 @@
             "*.config": "erlang"
         },
 
+// breadcrumbs
+    "breadcrumbs.enabled": true,
+
+// git
+    "git.confirmSync": false,
+
 // telemetry
 // see https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-telemetry-reporting
     "telemetry.enableTelemetry": false,
@@ -39,14 +47,12 @@
 
 // workbench
     "workbench.colorTheme": "Monokai",
-    "workbench.panel.location": "bottom",
     "workbench.startupEditor": "newUntitledFile",
 
 // terminal
 // see http://www.growingwiththeweb.com/2017/03/mastering-vscodes-terminal.html
 // see https://code.visualstudio.com/docs/editor/integrated-terminal
     "terminal.integrated.scrollback": 5000,
-    "terminal.integrated.rightClickCopyPaste": true,
 
 // ext gitProjectManager
     "gitProjectManager.baseProjectsFolders": ["/Users/rui.coelho/Repos/"],
@@ -57,24 +63,26 @@
     "erlang.codeLensEnabled": true,
     "erlang.verbose": false,
 
-// ext media player (TODO: missing filename)
-    "media.player": {
-        "players": [
-            {
-                "name": "My VLC player",
-                "type": "vlc",
-                "port": 8080,
-                "password": "I6UVBJliYE2cwLpL",
-                "showAllPlaylists": true
-            }
-        ]
-    },
+// // ext media player (TODO: missing filename)
+//     "media.player": {
+//         "players": [
+//             {
+//                 "name": "My VLC player",
+//                 "type": "vlc",
+//                 "port": 8080,
+//                 "password": "I6UVBJliYE2cwLpL",
+//                 "showAllPlaylists": true
+//             }
+//         ]
+//     },
 
-// ext todo
-    "todo-tree.regex":  "(TODO|FIXME)",
-    "todo-tree.globs": ["!_build/**"],
-    "todo-tree.flat": true,
-    "todo-tree.expanded": true,
+// // ext codebucket
+//     "codebucket.bitbucketServerHosts": [
+//         {
+//             "webHost": "https://stash.miniclip.com",
+//             "gitHost": "stash.miniclip.com:7999"
+//         }
+//     ],
 
 // ext gitlens
     "gitlens.gitExplorer.files.layout": "list",
@@ -92,14 +100,6 @@
     },
     "gitlens.keymap": "chorded",
     "gitlens.historyExplorer.enabled": true,
-    "gitlens.codeLens.enabled": false,
-
-// ext codebucket
-    "codebucket.bitbucketServerHosts": [
-        {
-            "webHost": "https://stash.miniclip.com",
-            "gitHost": "stash.miniclip.com:7999"
-        }
-    ]
+    "gitlens.codeLens.enabled": false
 }
 
