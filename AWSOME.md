@@ -1,10 +1,13 @@
 ## [Awsome Shell/CLI](https://github.com/alebcay/awesome-shell)
 
-Shells
+### Shells
+
    * [fish](https://github.com/fish-shell/fish-shell) Smart and user-friendly command line shell
    * [zsh](http://www.zsh.org/) Powerful shell with scripting language
 
-Tools
+### Tools
+
+   * [bat](https://github.com/sharkdp/bat) cat(1) clone with wings
    * [cheat](https://github.com/chrisallenlane/cheat) Create and view interactive cheatsheets on the command-line
    * [ddgr](https://github.com/jarun/ddgr) DuckDuckGo from the terminal
    * [direnv](https://github.com/direnv/direnv) Environment switcher for the shell, compare with autoenv
@@ -22,8 +25,9 @@ Tools
    * [ts](https://github.com/xenogenesi/task-spooler) Unix batch system where the tasks spooled run one after the other
    * [z](https://github.com/rupa/z) Z is the new j, yo
    * [v](https://github.com/rupa/v) Z for VIM
-   
-Apps
+
+### Apps
+
    * [cloc](https://github.com/AlDanial/cloc) Count Lines of Code
    * [cmus](https://github.com/cmus/cmus) Cross-platform cli audio player
    * [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) Good-lookin' diffs. Actually… nah… The best-lookin' diffs
@@ -44,8 +48,9 @@ Apps
    * [mpv](https://github.com/mpv-player/mpv) Video player based on MPlayer/mplayer2
    * [multitail](https://www.vanheusden.com/multitail/) Monitor logfiles and command output in multiple windows in a terminal, colorize, filter and merge
    * [mutt](http://www.mutt.org/) All mail clients suck. This one just sucks less
-   * [neovim](https://github.com/neovim/neovim) Vim-fork focused on extensibility and usability 
+   * [neovim](https://github.com/neovim/neovim) Vim-fork focused on extensibility and usability
    * [ngrep](http://ngrep.sourceforge.net/) grep as a network packet analyzer
+   * [nnn](https://github.com/jarun/nnn) fastest terminal file manager ever written
    * [rcm](https://github.com/thoughtbot/rcm) rc file (dotfile) management
    * [rtv](https://github.com/michael-lazar/rtv) Browse Reddit from your terminal
    * [terjira](https://github.com/keepcosmos/terjira) Command line power tool for Jira
@@ -55,5 +60,3 @@ Apps
    * [weather-cli](https://github.com/riyadhalnur/weather-cli) Check the weather for your city from your termina
    * [w3m](https://github.com/tats/w3m) Debian's w3m: WWW browsable pager
    * [weechat](https://weechat.org/) WeeChat is a fast, light and extensible chat client
-   * []()
-   
