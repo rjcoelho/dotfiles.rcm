@@ -42,6 +42,7 @@
    * [git-secret](https://github.com/sobolevn/git-secret) Store your private data inside a git repository
    * [grv](https://github.com/rgburke/grv) Text-mode interface for Git with customisable vi bindings
    * [hub](https://github.com/github/hub) A command-line wrapper for git that makes you better at GitHub
+   * [ical-buddy](http://hasseg.org/icalBuddy/) OSX calendar on the command line
    * [lnav](http://lnav.org/) An advanced log file viewer for the small-scale
    * [jq](https://github.com/stedolan/jq) Sed for json data
    * [mpsyt](https://github.com/mps-youtube/mps-youtube) Terminal based YouTube player and downloader
