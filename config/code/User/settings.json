@@ -99,6 +99,7 @@
     },
     "gitlens.keymap": "chorded",
     "gitlens.historyExplorer.enabled": true,
-    "gitlens.codeLens.enabled": false
+    "gitlens.codeLens.enabled": false,
+    "workbench.editor.highlightModifiedTabs": true
 }
 
