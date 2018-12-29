@@ -33,7 +33,7 @@ curl 'http://vim-bootstrap.com/generate.vim' --data 'editor=vim' > ~/.vimrc
 
 Update plugins:
 ```
-vim +PlugInstall +qall
+vim +PlugUpgrade +PlugUpdate +qall
 ```
 
 Cleanup/remove unused directories/plugins:
