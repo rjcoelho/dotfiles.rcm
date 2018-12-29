@@ -6,10 +6,14 @@ botocore==1.12.71
 cfn-flip==1.1.0.post1
 Click==7.0
 docutils==0.14
+greenlet==0.4.15
 Jinja2==2.10
 jinja2-cli==0.6.0
 jmespath==0.9.3
 MarkupSafe==1.1.0
+msgpack==0.6.0
+neovim==0.3.1
+pynvim==0.3.1
 python-dateutil==2.7.5
 PyYAML==4.2b4
 s3transfer==0.1.13

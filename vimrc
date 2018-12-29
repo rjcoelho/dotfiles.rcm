@@ -1,4 +1,4 @@
-" vim-bootstrap b990cad
+" vim-bootstrap b0a75e4
 
 "*****************************************************************************
 "" Vim-PLug core
@@ -10,7 +10,11 @@ endif
 let vimplug_exists=expand('~/.vim/autoload/plug.vim')
 
 let g:vim_bootstrap_langs = ""
-let g:vim_bootstrap_editor = ( has('nvim') ? 'nvim' : 'vim' )				" nvim or vim
+if has("nvim")
+  let g:vim_bootstrap_editor = "nvim"				" nvim or vim
+else
+  let g:vim_bootstrap_editor = "vim"				" nvim or vim
+endif
 
 if !filereadable(vimplug_exists)
   if !executable("curl")
@@ -63,12 +67,8 @@ Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 
-if g:vim_bootstrap_editor == 'nvim'
-  Plug 'Shougo/deol.nvim'
-else
-  if v:version >= 703
-    Plug 'Shougo/vimshell.vim'
-  endif
+if v:version >= 703
+  Plug 'Shougo/vimshell.vim'
 endif
 
 if v:version >= 704
@@ -137,12 +137,10 @@ set noswapfile
 
 set fileformats=unix,dos,mac
 
-if g:vim_bootstrap_editor == 'vim'
-  if exists('$SHELL')
-      set shell=$SHELL
-  else
-      set shell=/bin/sh
-  endif
+if exists('$SHELL')
+    set shell=$SHELL
+else
+    set shell=/bin/sh
 endif
 
 " session management
@@ -182,7 +180,7 @@ else
   let g:indentLine_char = '┆'
   let g:indentLine_faster = 1
 
-
+  
   if $COLORTERM == 'gnome-terminal'
     set term=gnome-256color
   else
@@ -190,7 +188,7 @@ else
       set term=xterm-256color
     endif
   endif
-
+  
 endif
 
 

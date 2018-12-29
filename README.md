@@ -54,14 +54,15 @@ cat vim.log
 
 ### [Neovim](https://github.com/neovim/neovim):
 
-Install neovim (non-OSX):
+Install neovim:
 ```
-# non-osx
+# non-OSX
 yum|apt-get neovim python2-neovim python-neovim
 
-# osx (already on Brewfile)
-pip install neovim --upgrade
-pip3 install neovim --upgrade
+# OSX
+brew install neovim --with-python (already on Brewfile)
+python2 -m pip install neovim --upgrade
+python3 -m pip install neovim --upgrade
 ```
 
 To use your existing Vim configurations:
