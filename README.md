@@ -220,6 +220,40 @@ python2 -m pip freeze | cut -d '=' -f1 | python2 -m pip install --upgrade -r /de
 python3 -m pip freeze | cut -d '=' -f1 | python3 -m pip install --upgrade -r /dev/stdin
 ```
 
+### [Rust](https://www.rust-lang.org/)
+
+Install rust using [rustup](https://rustup.rs/):
+```
+# non-OSX 
+curl https://sh.rustup.rs -sSf | sh
+# OSX
+brew install rustup ; rustup-init -y
+rustc --version
+```
+
+Update rust:
+```
+rustup update
+```
+
+Install rls and rustfmt/rustsym:
+```
+rustup component add rls-preview rust-analysis rust-src
+rustup component add rustfmt
+cargo install rustsym
+```
+
+List packages installed
+```
+cargo install --list
+```
+
+Cleaup packages
+```
+cargo install --git https://github.com/matthiaskrgr/cargo-cache
+cargo cache -a
+```
+
 ### [Newsboat](https://github.com/newsboat/newsboat)
 
 Export OPML form feedly (see https://blog.feedly.com/opml/)
