@@ -47,6 +47,7 @@
 // workbench
     "workbench.colorTheme": "Monokai",
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.highlightModifiedTabs": true,
 
 // terminal
 // see http://www.growingwiththeweb.com/2017/03/mastering-vscodes-terminal.html
@@ -98,8 +99,9 @@
         "suppressWelcomeNotice": true
     },
     "gitlens.keymap": "chorded",
-    "gitlens.historyExplorer.enabled": true,
     "gitlens.codeLens.enabled": false,
-    "workbench.editor.highlightModifiedTabs": true
+    "gitlens.views.repositories.files.layout": "list",
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true
 }
 
