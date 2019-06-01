@@ -198,8 +198,8 @@ python3 -m pip install -r ~/.config/python3/requirements.txt
 
 Generate/Update packages using pip:
 ```
-python2 -m pip freeze >! ~/.config/python2/requirements.txt
-python3 -m pip freeze >! ~/.config/python3/requirements.txt
+python2 -m pip freeze --q >! ~/.config/python2/requirements.txt
+python3 -m pip freeze --q >! ~/.config/python3/requirements.txt
 ```
 
 When updating python, pip/setuptools may beed to be updated:
@@ -216,8 +216,8 @@ python3 -m pip freeze | xargs python3 -m pip uninstall -y
 
 Upgrade all pip packages:
 ```
-python2 -m pip freeze | cut -d '=' -f1 | python2 -m pip install --upgrade -r /dev/stdin
-python3 -m pip freeze | cut -d '=' -f1 | python3 -m pip install --upgrade -r /dev/stdin
+python2 -m pip freeze -qq | cut -d '=' -f1 | python2 -m pip install --upgrade -r /dev/stdin
+python3 -m pip freeze -qq | cut -d '=' -f1 | python3 -m pip install --upgrade -r /dev/stdin
 ```
 
 ### [Rust](https://www.rust-lang.org/)
