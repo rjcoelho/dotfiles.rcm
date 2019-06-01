@@ -36,6 +36,7 @@
    * [gitflow-avh](https://github.com/petervanderdoes/gitflow-avh) AVH Edition of the git extensions to provide high-level repository operations for Vincent Driessen's branching model
    * [git-extras](https://github.com/tj/git-extras) GIT utilities -- repo summary, repl, changelog population, author commit percentages and more
    * [git-open](https://github.com/paulirish/git-open) Open the GitHub page or website for a repository in your browser
+   * [go-jira](https://github.com/Netflix-Skunkworks/go-jira) Simple jira command line client in Go
    * [gotty](https://github.com/yudai/gotty) Share your terminal as a web application
    * [htop](https://github.com/hishamhm/htop) A ncurses based interactive process viewer which aims to be a better top
    * [httpie](https://github.com/jakubroztocil/httpie) HTTPie is a command line HTTP client, a user-friendly cURL replacement
@@ -54,7 +55,6 @@
    * [nnn](https://github.com/jarun/nnn) fastest terminal file manager ever written
    * [rcm](https://github.com/thoughtbot/rcm) rc file (dotfile) management
    * [rtv](https://github.com/michael-lazar/rtv) Browse Reddit from your terminal
-   * [terjira](https://github.com/keepcosmos/terjira) Command line power tool for Jira
    * [tig](https://github.com/jonas/tig) Text-mode interface for Git
    * [vim](https://github.com/vim/vim) Vim is a greatly improved version of the good old UNIX editor Vi
    * [youtube-dl](https://github.com/rg3/youtube-dl) Small command-line program to download videos from YouTube.com and other video sites
