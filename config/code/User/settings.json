@@ -130,6 +130,7 @@
         }
     ],
     "jira-plugin.baseUrl": "https://jira.miniclip.com",
-    "jira-plugin.username": "rui.coelho"
+    "jira-plugin.username": "rui.coelho",
+    "jira-plugin.workingProject": ""
 }
 
