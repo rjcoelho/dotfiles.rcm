@@ -151,7 +151,7 @@ xcode-select --install
 
 Install gem's bundler (ruby package manager)
 ```
-gem install bundler
+sudo gem install bundler
 bundle install --gemfile=~/.config/ruby/Gemfile
 ```
 
@@ -192,13 +192,13 @@ brew install python@3
 
 Install python packages using pip:
 ```
-python2 -m pip install -r ~/.config/python2/requirements.txt
+python2 -m pip install -r ~/.config/python2/requirements.txt --disable-pip-version-check
 python3 -m pip install -r ~/.config/python3/requirements.txt
 ```
 
 Generate/Update packages using pip:
 ```
-python2 -m pip freeze --q >! ~/.config/python2/requirements.txt
+python2 -m pip freeze --q >! ~/.config/python2/requirements.txt --disable-pip-version-check
 python3 -m pip freeze --q >! ~/.config/python3/requirements.txt
 ```
 
