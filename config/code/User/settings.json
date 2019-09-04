@@ -52,6 +52,7 @@
 // see https://itnext.io/easy-enhancements-for-vs-codes-terminal-6dda2c22ee5c
     "terminal.integrated.scrollback": 5000,
     "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.rendererType": "dom",
 
 // ext gitProjectManager
     "gitProjectManager.baseProjectsFolders": ["/Users/rui.coelho/Repos/"],
@@ -129,6 +130,8 @@
             "value": "#42b883"
         }
     ],
+
+// ex jira
     "jira-plugin.baseUrl": "https://jira.miniclip.com",
     "jira-plugin.username": "rui.coelho",
     "jira-plugin.workingProject": ""
