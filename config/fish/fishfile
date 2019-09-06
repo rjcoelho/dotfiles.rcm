@@ -1,7 +1,12 @@
-fisherman/await
+# see https://github.com/oh-my-fish/packages-main/tree/master/packages
+
+# plugins
 oh-my-fish/plugin-fasd
+oh-my-fish/plugin-aws
+oh-my-fish/plugin-direnv
+oh-my-fish/plugin-ssh-config.d
 fisherman/fzf
-fisherman/get
-fisherman/getopts
-fisherman/last_job_id
+
+# themes
 oh-my-fish/theme-robbyrussell
+#rafaelrinaldi/pure

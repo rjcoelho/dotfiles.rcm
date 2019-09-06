@@ -7,5 +7,5 @@ test -e {$KERL_DEFAULT_ACTIVATION} ; and source {$KERL_DEFAULT_ACTIVATION}.fish
 # see https://www.iterm2.com/documentation-shell-integration.html
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
-$ see https://github.com/direnv/direnv
+# see https://github.com/direnv/direnv
 eval (direnv hook fish)

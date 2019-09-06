@@ -78,28 +78,6 @@ Add aliases and templates:
 git config --global include.path ~/.gitconfig.local
 ```
 
-### [Ctags](http://ctags.sourceforge.net/)
-
-Install ctags (non-OSX):
-```
-yum|apt-get|pacman ctags
-```
-
-Generate ```.git/tags``` on checkout [ctags with git](https://github.com/scottsbaldwin/effortless-ctags-with-git):
-```
-git config --global init.templatedir '~/.git_template'
-cd <REPO>
-echo "#!/bin/sh\n.git/hooks/ctags >/dev/null 2>&1 &" > .git/post_checkout
-chmod +x .git/hooks/*
-git init
-```
-
-Using [ctags in vim](https://andrew.stwrt.ca/posts/vim-ctags/)
-```
-:tag function_name
-:set tags # show tags file used
-```
-
 ### [Erlang/Kerl](https://github.com/kerl/kerl)
 
 Install kerl (non-OSX):
@@ -172,10 +150,12 @@ if [[ "$OSTYPE" == darwin* ]]; then
 fi
 ```
 
-Generate VSCode extensions list, see [VS Code Extension Marketplace](http://go.microsoft.com/fwlink/?LinkId=827846):
+Generate and install extensions list [Command line extension management](https://code.visualstudio.com/docs/editor/extension-gallery#_command-line-extension-management)
 ```
-code --list-extensions | jq '. | split("\n") | map(select(length > 0)) | {recomendations: .} ' -Rs >! $HOME/.config/Code/User/extensions.json
+code --list-extensions | sort > ~/.config/Code/User/extensions.list
+cat ~/.config/Code/User/extensions.list | xargs -L1 code --install-extension
 ```
+
 ### [Python/pip](https://pip.pypa.io/en/stable/quickstart/)
 
 On OSX install python2 and python3 using brew but don't override OSX's python. See [Homebrew and python](https://docs.brew.sh/Homebrew-and-Python.html).

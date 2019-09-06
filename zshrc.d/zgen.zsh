@@ -58,4 +58,5 @@ if ! zgen saved; then
 fi
 
 # custom prompt
-RPROMPT+=' %F{6}$(show_rebar_profile)'
+RPROMPT+=' %F{6}$(show_rebar_profile_sorin)' # sorin
+PROMPT_LEAN_RIGHT='show_rebar_profile_lean' # lean

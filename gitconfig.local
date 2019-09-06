@@ -6,7 +6,6 @@
     br = branch
     ci = commit
     st = status
-    git-ignore = !"gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 [submodule]
     fetchJobs = 4
 [core]
