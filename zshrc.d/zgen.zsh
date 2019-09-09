@@ -35,12 +35,10 @@ function zgen_using_zprezto() {
     zgen prezto module:terminal auto-title 'yes'
 
     # install some rc prezto files
-    ln -sf "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile" "${ZDOTDIR:-$HOME}/.zprofile"
-    ln -sf "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" "${ZDOTDIR:-$HOME}/.zshenv"
+    #ln -sf "${ZDOTDIR:-$HOME}/.zgen/$ZGEN_PREZTO_REPO-$ZGEN_PREZTO_BRANCH/runcoms/zprofile" "${ZDOTDIR:-$HOME}/.zprofile"
+    #ln -sf "${ZDOTDIR:-$HOME}/.zgen/$ZGEN_PREZTO_REPO-$ZGEN_PREZTO_BRANCH/runcoms/zshenv" "${ZDOTDIR:-$HOME}/.zshenv"
 
-    # see https://github.com/sorin-ionescu/prezto/issues/1245
-#    function revert-expand-or-complete { zle expand-or-complete }
- #   zle -N expand-or-complete-with-indicator revert-expand-or-complete
+    # see https://github.com/sorin-ionescu/prezto/pull/1638
 
     # see https://github.com/unixorn/awesome-zsh-plugins
 }
