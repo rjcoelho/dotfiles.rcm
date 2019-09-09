@@ -204,7 +204,7 @@ python3 -m pip freeze -qq | cut -d '=' -f1 | python3 -m pip install --upgrade -r
 
 Install rust using [rustup](https://rustup.rs/):
 ```
-# non-OSX 
+# non-OSX
 curl https://sh.rustup.rs -sSf | sh
 # OSX
 brew install rustup ; rustup-init -y
@@ -244,6 +244,19 @@ open https://feedly.com/i/opml
 Import OPML from feedly
 ```
 newsboat -i ~/.config/rss/feedly.opml
+```
+
+### [MR](http://myrepos.branchable.com/)
+
+Register git repos
+```
+find ~/Repos -maxdepth 1 -mindepth 1 -print0 | sort -z | xargs -0 -n1 mr register
+(copy ~/.mrconfig into new host)
+```
+
+Update al repos
+```
+mr -j5 update
 ```
 
 ### TODO
