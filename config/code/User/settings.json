@@ -53,6 +53,7 @@
     "terminal.integrated.scrollback": 5000,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.shell.osx": "/bin/zsh",
 
 // ext gitProjectManager
     "gitProjectManager.baseProjectsFolders": ["/Users/rui.coelho/Repos/"],
