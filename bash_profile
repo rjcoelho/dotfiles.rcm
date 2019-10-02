@@ -16,3 +16,5 @@ if [ -d $HOME/.login.d ]; then
     done
 fi
 
+
+export PATH="$HOME/.cargo/bin:$PATH"

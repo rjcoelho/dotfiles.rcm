@@ -141,6 +141,11 @@ sudo git clone --depth 1 https://github.com/junegunn/fzf.git /usr/local/opt/fzf
 sudo /usr/local/opt/fzf/install --key-bindings --completion --no-update-rc
 ```
 
+Install fzf (OSX):
+```
+$(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
+```
+
 ### [VSCode](https://github.com/Microsoft/vscode)
 
 Install VSCode user settings and extensions:
