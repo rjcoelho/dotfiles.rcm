@@ -57,7 +57,7 @@ cat vim.log
 Install neovim:
 ```
 # non-OSX
-yum|apt-get neovim python2-neovim python-neovim
+yum|apt-get|pacman -S neovim python2-neovim python-neovim
 
 # OSX
 brew install neovim --with-python (already on Brewfile)
@@ -262,6 +262,18 @@ find ~/Repos -maxdepth 1 -mindepth 1 -print0 | sort -z | xargs -0 -n1 mr registe
 Update al repos
 ```
 mr -j5 update
+```
+
+### [alacritty](https://github.com/jwilm/alacritty.git)
+
+Install alacritty:
+```
+# non-OSX
+yum|apt-get|pacman -S alacritty
+
+# OSX
+brew cask install alacritty (already on Brewfile)
+ln -s /usr/local/opt/alacritty/Applications/Alacritty.app /Applications/
 ```
 
 ### TODO
