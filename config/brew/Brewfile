@@ -166,6 +166,7 @@ brew "s3cmd"
 brew "sdl2_image"
 brew "shared-mime-info"
 brew "shellcheck"
+brew "sk"
 brew "surfraw"
 brew "terminal-notifier"
 brew "the_platinum_searcher"
@@ -186,7 +187,7 @@ brew "zsh"
 brew "bbatsche/fisher/fisherman"
 brew "fullscreen/tap/aws-rotate-key"
 brew "greymd/tools/tmux-xpanes"
-brew "mscharley/homebrew/alacritty"
+brew "mscharley/homebrew/alacritty", args: ["HEAD"]
 brew "rjcoelho/boneyard/dynamodb-local", args: ["HEAD"]
 brew "rjcoelho/boneyard/gnupg@2.0"
 brew "thoughtbot/formulae/rcm"
@@ -236,10 +237,3 @@ cask "visual-studio-code-insiders"
 cask "vivaldi"
 cask "vlc"
 cask "zoomus"
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "SonicWall Mobile Connect", id: 822514576
-mas "Xcode", id: 497799835

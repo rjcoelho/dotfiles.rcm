@@ -23,6 +23,8 @@
    * [tldr](https://github.com/raylee/tldr) A fully-functional bash client for tldr, simplified and community-driven man pages
    * [tmux](http://tmux.github.io/) Terminal multiplexer
    * [ts](https://github.com/xenogenesi/task-spooler) Unix batch system where the tasks spooled run one after the other
+   * [sd](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative)
+   * [skim](https://github.com/lotabout/skim) Fuzzy Finder in rust!
    * [z](https://github.com/rupa/z) Z is the new j, yo
    * [v](https://github.com/rupa/v) Z for VIM
 
@@ -57,6 +59,7 @@
    * [rtv](https://github.com/michael-lazar/rtv) Browse Reddit from your terminal
    * [tig](https://github.com/jonas/tig) Text-mode interface for Git
    * [vim](https://github.com/vim/vim) Vim is a greatly improved version of the good old UNIX editor Vi
+   * [xsv](https://github.com/BurntSushi/xsv) A fast CSV command line toolkit written in Rust
    * [youtube-dl](https://github.com/rg3/youtube-dl) Small command-line program to download videos from YouTube.com and other video sites
    * [weather-cli](https://github.com/riyadhalnur/weather-cli) Check the weather for your city from your termina
    * [w3m](https://github.com/tats/w3m) Debian's w3m: WWW browsable pager

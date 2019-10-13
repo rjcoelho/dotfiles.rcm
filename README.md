@@ -118,6 +118,7 @@ brew bundle --file=~/.config/brew/Brewfile
 Upgrade brewfile:
 ```
 brew bundle dump --file=~/.config/brew/Brewfile --force
+brew bundle cleanup --file=~/.config/brew/Brewfile --force
 ```
 
 Install xcode command line tools (needed by some brew formulas):
