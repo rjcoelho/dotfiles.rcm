@@ -2,7 +2,13 @@ ZGEN_USE_PREZTO=1
 
 function zgen_without_zprezto() {
     # see https://github.com/unixorn/awesome-zsh-plugins
-    zgen load miekg/lean
+    #zgen load miekg/lean
+    zgen load mafredri/zsh-async
+    zgen load sindresorhus/pure
+    # see https://github.com/sindresorhus/pure/wiki/Customizations,-hacks-and-tweaks
+    prompt_newline='%666v'
+    PROMPT=" $PROMPT"
+
     #zgen load sfischer13/zsh-sensible
     zgen load rjcoelho/zsh-saneopt
     zgen load zsh-users/zsh-syntax-highlighting
@@ -56,5 +62,6 @@ if ! zgen saved; then
 fi
 
 # custom prompt
-RPROMPT+=' %F{6}$(show_rebar_profile_sorin)' # sorin
+RPROMPT+=' %F{6}$(show_rebar_profile_sorin)' # sorin/pure
 PROMPT_LEAN_RIGHT='show_rebar_profile_lean' # lean
+prompt_newline='%666v' # see https://github.com/sindresorhus/pure/wiki/Customizations,-hacks-and-tweaks
