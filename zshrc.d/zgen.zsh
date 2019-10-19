@@ -33,7 +33,7 @@ function zgen_using_zprezto() {
 
     # zgen options
     #zgen prezto editor key-bindings 'vi' # emacs|vi
-    zgen prezto prompt theme 'sorin' # default to sorin
+    zgen prezto prompt theme 'pure' # default to sorin
     zgen prezto utility:ls color 'yes'
     zgen prezto '*:*' color 'yes'
     #zgen prezto tmux:auto-start local 'yes'
@@ -62,6 +62,6 @@ if ! zgen saved; then
 fi
 
 # custom prompt
-RPROMPT+=' %F{6}$(show_rebar_profile_sorin)' # sorin/pure
+RPROMPT+=' %F{6}$(show_rebar_profile) %F{4}$(show_aws_profile)' # sorin/pure
 PROMPT_LEAN_RIGHT='show_rebar_profile_lean' # lean
 prompt_newline='%666v' # see https://github.com/sindresorhus/pure/wiki/Customizations,-hacks-and-tweaks
