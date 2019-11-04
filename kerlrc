@@ -6,3 +6,6 @@ export KERL_DEFAULT_ACTIVATION=$KERL_DEFAULT_INSTALL_DIR/19.3/activate
 export KERL_BUILD_PLT=true
 export KERL_DOCSH_DOT_ERLANG=exists
 
+# see https://github.com/kerl/kerl/issues/328
+export _CFLAGS="-g -O3 -fno-stack-check"
+export KERL_CONFIGURE_OPTIONS="--without-javac $KERL_CONFIGURE_OPTIONS"
