@@ -12,5 +12,5 @@ if [ ! -x "$(command -v youtube-dl)" ]; then
 fi
 export YT_ARGS="--geo-bypass --playlist-reverse --no-warnings --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"
 alias yt_mp3="youtube-dl $YT_ARGS \$YT_PLAYLIST"
-alias yt_plst="youtube-dl -j --flat-playlist \$YT_PLAYLIST | jq -r '.id' | sed 's_^_https://youtu.be/_'"
+alias yt_plst="youtube-dl -j --flat-playlist --playlist-reverse \$YT_PLAYLIST | jq -r '.id' | sed 's_^_https://youtu.be/_'"
 alias yt_plst_mp3="yt_plst | xargs -n 1 -P 8 youtube-dl $YT_ARGS"
