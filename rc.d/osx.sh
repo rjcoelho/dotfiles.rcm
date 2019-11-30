@@ -2,7 +2,6 @@
 [ -f "${HOME}/.iterm2_shell_integration.${SHELL_EXTENSION}" ] && \
     source "${HOME}/.iterm2_shell_integration.${SHELL_EXTENSION}"
 
-
 if [ ! -x "$(command -v osascript)" ]; then
     return 1
 fi

@@ -1,16 +1,16 @@
-ZGEN_USE_PREZTO=1
+ZGEN_USE_PREZTO=0
 
 function zgen_without_zprezto() {
     # see https://github.com/unixorn/awesome-zsh-plugins
     #zgen load miekg/lean
     zgen load mafredri/zsh-async
     zgen load sindresorhus/pure
-    # see https://github.com/sindresorhus/pure/wiki/Customizations,-hacks-and-tweaks
-    prompt_newline='%666v'
-    PROMPT=" $PROMPT"
 
     #zgen load sfischer13/zsh-sensible
-    zgen load rjcoelho/zsh-saneopt
+    #zgen load rjcoelho/zsh-saneopt
+    zgen load rjcoelho/zsh-history
+    zgen load rjcoelho/zsh-directory
+    zgen load rjcoelho/zsh-completion
     zgen load zsh-users/zsh-syntax-highlighting
     zgen load zsh-users/zsh-history-substring-search
     zgen load zsh-users/zsh-autosuggestions
@@ -39,14 +39,6 @@ function zgen_using_zprezto() {
     #zgen prezto tmux:auto-start local 'yes'
     zgen prezto tmux:iterm integrate 'yes'
     zgen prezto module:terminal auto-title 'yes'
-
-    # install some rc prezto files
-    #ln -sf "${ZDOTDIR:-$HOME}/.zgen/$ZGEN_PREZTO_REPO-$ZGEN_PREZTO_BRANCH/runcoms/zprofile" "${ZDOTDIR:-$HOME}/.zprofile"
-    #ln -sf "${ZDOTDIR:-$HOME}/.zgen/$ZGEN_PREZTO_REPO-$ZGEN_PREZTO_BRANCH/runcoms/zshenv" "${ZDOTDIR:-$HOME}/.zshenv"
-
-    # see https://github.com/sorin-ionescu/prezto/pull/1638
-
-    # see https://github.com/unixorn/awesome-zsh-plugins
 }
 
 # see https://github.com/tarjoilija/zgen
