@@ -234,10 +234,10 @@ List packages installed
 cargo install --list
 ```
 
-Cleaup packages
+Manage cache
 ```
-cargo install --git https://github.com/matthiaskrgr/cargo-cache
-cargo cache -a
+cargo install cargo-cache
+cargo cache -a # autoclean
 ```
 
 ### [Newsboat](https://github.com/newsboat/newsboat)

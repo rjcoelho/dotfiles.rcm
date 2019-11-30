@@ -15,7 +15,7 @@ function zgen_without_zprezto() {
     zgen load zsh-users/zsh-history-substring-search
     zgen load zsh-users/zsh-autosuggestions
     zgen load zsh-users/zsh-completions
-    #zgen load laurenkt/zsh-vimto
+    zgen load laurenkt/zsh-vimto
 }
 
 function zgen_using_zprezto() {
