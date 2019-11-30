@@ -1,3 +1,8 @@
+# return if requirements are not found.
+if [ ! -x "$(command -v fzf)" ]; then
+    return 1
+fi
+
 # see https://github.com/junegunn/fzf
 [ -f "${HOME}/.fzf.${SHELL_EXTENSION}" ] && \
     source "${HOME}/.fzf.${SHELL_EXTENSION}"
