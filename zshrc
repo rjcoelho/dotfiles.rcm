@@ -10,6 +10,11 @@ if [ -d $HOME/.zshrc.d ]; then
         source $file
     done
 fi
+if [ -d $HOME/.zgen.d ]; then
+    for file in $HOME/.zgen.d/*.zsh; do
+        source $file
+    done
+fi
 if [ -d $HOME/.rc.d ]; then
     for file in $HOME/.rc.d/*.sh; do
         source $file
