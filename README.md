@@ -277,6 +277,13 @@ brew cask install alacritty (already on Brewfile)
 ln -s /usr/local/opt/alacritty/Applications/Alacritty.app /Applications/
 ```
 
+### [item2](https://iterm2.com/)
+
+Load/Save Profiles
+````
+Preferences -> Profiles -> Import JSON Profiles / Save as Profile as JSON (~/.config/iterm/Default.json)
+````
+
 ### TODO
 - Review zsh plugins and maybe replace zprezto with (miekg/lean, rjcoelho/zsh-saneopt, zsh-users/zsh-syntax-highlighting, zsh-users/zsh-history-substring-search, zsh-users/zsh-autosuggestions, zsh-users/zsh-completions)
     # https://github.com/unixorn/awesome-zsh-plugins
