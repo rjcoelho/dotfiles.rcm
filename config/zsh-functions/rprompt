@@ -1,0 +1,3 @@
+# function rprompt(){
+    echo " %F{6}$(show_rebar_profile) %F{4}$(show_aws_profile)"
+# }

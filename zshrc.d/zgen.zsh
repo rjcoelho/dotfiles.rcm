@@ -2,21 +2,21 @@ ZGEN_USE_PREZTO=0
 
 function zgen_without_zprezto() {
     # see https://github.com/unixorn/awesome-zsh-plugins
-    #zgen load miekg/lean
-    zgen load mafredri/zsh-async
-    zgen load sindresorhus/pure
-
-    #zgen load sfischer13/zsh-sensible
-    #zgen load rjcoelho/zsh-saneopt
-    zgen load rjcoelho/zsh-history
-    zgen load rjcoelho/zsh-directory
-    zgen load rjcoelho/zsh-completion
-    zgen load zsh-users/zsh-syntax-highlighting
-    zgen load zsh-users/zsh-history-substring-search
-    zgen load zsh-users/zsh-autosuggestions
-    zgen load zsh-users/zsh-completions
-    zgen load laurenkt/zsh-vimto
-    zgen load leophys/zsh-plugin-fzf-finder
+    zgen loadall <<EOPLUGINS
+        rjcoelho/zsh-history
+        rjcoelho/zsh-directory
+        rjcoelho/zsh-completion
+        zsh-users/zsh-syntax-highlighting
+        zsh-users/zsh-history-substring-search
+        zsh-users/zsh-autosuggestions
+        zsh-users/zsh-completions
+#        softmoth/zsh-vim-mode
+        leophys/zsh-plugin-fzf-finder
+    
+        mafredri/zsh-async # pure needs it
+#       intelfx/pure
+        miekg/lean
+EOPLUGINS
 }
 
 function zgen_using_zprezto() {
