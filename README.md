@@ -284,10 +284,15 @@ Load/Save Profiles
 Preferences -> Profiles -> Import JSON Profiles / Save as Profile as JSON (~/.config/iterm/Default.json)
 ````
 
+### [fisher](https://github.com/jorgebucaran/fisher)
+
+Update
+```
+fisher ls
+fisher seld-update
+```
+See [awesome-fish](https://github.com/jorgebucaran/awesome-fish) and (oh-my-fish)[https://github.com/oh-my-fish] for more plugins.
+
 ### TODO
-- Review zsh plugins and maybe replace zprezto with (miekg/lean, rjcoelho/zsh-saneopt, zsh-users/zsh-syntax-highlighting, zsh-users/zsh-history-substring-search, zsh-users/zsh-autosuggestions, zsh-users/zsh-completions)
-    # https://github.com/unixorn/awesome-zsh-plugins
-    # https://github.com/laurenkt/zsh-vimto
-    # https://github.com/Tarrasch/zsh-functional
-    # https://github.com/unixorn/git-extra-commands
+- zpreto-contrib or zgen?
 
