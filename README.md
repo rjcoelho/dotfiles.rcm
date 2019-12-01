@@ -11,7 +11,7 @@
 ```
 git clone --recursive https://github.com/rjcoelho/dotfiles.rcm ~/.dotfiles.rcm
 cd ~/.dotfiles.rcm
-rcup -d `pwd` -x README.md -x LICENSE
+rcup -v -d `pwd`
 ```
 
 ### Rcm:
@@ -71,7 +71,7 @@ ln -sf ~/.vim ~/.config/nvim
 ln -sf ~/.vimrc ~/.config/nvim/init.vim
 ```
 
-### Git-templates
+### ()[] 
 
 Add aliases and templates:
 ```
@@ -293,6 +293,32 @@ fisher seld-update
 ```
 See [awesome-fish](https://github.com/jorgebucaran/awesome-fish) and (oh-my-fish)[https://github.com/oh-my-fish] for more plugins.
 
-### TODO
-- zpreto-contrib or zgen?
+### [zsh-users](https://github.com/zsh-users) / [zimfw](https://github.com/zimfw/zimfw)
 
+Install zsh:
+```
+# non-OSX
+yum|apt-get|pacman -S zsh
+
+# OSX
+brew install zsh (already on Brewfile)
+
+chsh -s /bin/zsh
+```
+
+Update zim:
+```
+zmanage update
+```
+
+### [Browsers](https://en.wikipedia.org/wiki/Web_browser)
+
+Extensions for [Brave Browser](https://github.com/brave)
+```
+cvim, bitwarden, save to pocket, feedly notifier
+```
+
+Extensions for [Firefox](https://en.wikipedia.org/wiki/Firefox) / [Vivaldi](https://en.wikipedia.org/wiki/Vivaldi_%28web_browser%29)
+```
+DuckDuckGo Privacy Essentials
+```

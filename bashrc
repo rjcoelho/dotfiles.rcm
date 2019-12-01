@@ -5,11 +5,10 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-export SHELL_EXTENSION=bash
-
 # see https://chr4.org/blog/2014/09/10/conf-dot-d-like-directories-for-zsh-slash-bash-dotfiles/
+export SHELL_EXTENSION=bash
 if [ -d $HOME/.bashrc.d ]; then
-    for file in $HOME/.bashrc.d/*.bash; do
+    for file in $HOME/.bashrc.d/*.$SHELL_EXTENSION; do
         source $file
     done
 fi

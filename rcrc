@@ -1,3 +1,4 @@
 TAGS="vim tmux zsh bash vscode osx"
-EXCLUDES="README.md LICENSE"
+EXCLUDES="*.md LICENSE"
 DOTFILES_DIRS="$HOME/.dotfiles.rcm"
+SYMLINK_DIRS="login.d rc.d tmux.d vimrc.d zshrc.d zim"
