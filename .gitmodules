@@ -8,3 +8,6 @@
 	path = zim
 	url = https://github.com/zimfw/zimfw
 	branch = develop
+[submodule "zsh-defer"]
+	path = zsh-defer
+	url = https://github.com/romkatv/zsh-defer.git
