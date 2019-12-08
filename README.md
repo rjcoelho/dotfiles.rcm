@@ -306,9 +306,37 @@ brew install zsh (already on Brewfile)
 chsh -s /bin/zsh
 ```
 
-Update zim:
+Install zimfw:
 ```
-zmanage update
+git clone https://github.com/zimfw/zimfw ~/.zim (already done on rcup)
+source ~/.zim/zimfw.zsh install
+```
+
+Added/remove/change new module(s) to .zimrc:
+```
+zimfw clean ; rm zim/modules -rf ; zimfw install
+```
+
+Update your modules to their latest revisions:
+```
+zimfw update
+```
+
+Upgrade zimfw.zsh to its latest version
+```
+zimfw upgrade
+zimfw info
+```
+
+Measure zsh init:
+```
+time zsh -i -c exit
+```
+
+Profiling zshrc:
+```
+zmodload zsh/zprof # top of your .zshrc file
+zprof # bottom of .zshrc
 ```
 
 ### [Browsers](https://en.wikipedia.org/wiki/Web_browser)

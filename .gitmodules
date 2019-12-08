@@ -6,4 +6,5 @@
 	url = https://github.com/mrzool/bash-sensible
 [submodule "zim"]
 	path = zim
-	url = https://github.com/rjcoelho/zimfw
+	url = https://github.com/zimfw/zimfw
+	branch = develop
