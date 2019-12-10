@@ -4,10 +4,6 @@
 [submodule "bash-sensible"]
 	path = bashrc.d/sensible
 	url = https://github.com/mrzool/bash-sensible
-[submodule "zim"]
-	path = zim
-	url = https://github.com/zimfw/zimfw
-	branch = develop
 [submodule "zsh-defer"]
 	path = zsh-defer
 	url = https://github.com/romkatv/zsh-defer.git

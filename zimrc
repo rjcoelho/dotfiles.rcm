@@ -5,7 +5,7 @@ zmodule input                                       # Applies correct bindkeys f
 zmodule termtitle                                   # Sets a custom terminal title.
 zmodule utility                                     # Utility aliases and functions. Adds colour to ls, grep and less.
 zmodule zsh-users/zsh-completions
-zmodule rjcoelho/completion                         # after zsh-users/zsh-completions
+zmodule rjcoelho/completion -b ssh_config           # after zsh-users/zsh-completions
 zmodule zsh-users/zsh-autosuggestions
 zmodule zsh-users/zsh-syntax-highlighting           # after completion
 zmodule zsh-users/zsh-history-substring-search      # after zsh-users/zsh-syntax-highlighting

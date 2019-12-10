@@ -1,2 +1,4 @@
 **/*.zwc
 **/*.zwc.old
+zim/init.zsh
+zim/init.zsh.old

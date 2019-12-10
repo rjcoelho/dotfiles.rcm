@@ -308,7 +308,7 @@ chsh -s /bin/zsh
 
 Install zimfw:
 ```
-git clone https://github.com/zimfw/zimfw ~/.zim (already done on rcup)
+curl -s https://raw.githubusercontent.com/zimfw/zimfw/develop/zimfw.zsh -o zim/zimfw.zsh (already done on rcup)
 source ~/.zim/zimfw.zsh install
 ```
 
