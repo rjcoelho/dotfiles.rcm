@@ -18,9 +18,9 @@ rcup -v -d `pwd`
 
 Install (rcm)[https://github.com/thoughtbot/rcm] (non-OSX):
 ```
-curl -LO https://thoughtbot.github.io/rcm/dist/rcm-1.3.0.tar.gz
-tar -xvf rcm-1.3.0.tar.gz
-cd rcm-1.3.0
+curl -LO https://thoughtbot.github.io/rcm/dist/rcm-1.3.3.tar.gz
+tar -xvf rcm-1.3.3.tar.gz
+cd rcm-1.3.3
 ./Configure && make && sudo make install
 ```
 
@@ -71,7 +71,7 @@ ln -sf ~/.vim ~/.config/nvim
 ln -sf ~/.vimrc ~/.config/nvim/init.vim
 ```
 
-### ()[] 
+### (Git-Configuration)[https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration] 
 
 Add aliases and templates:
 ```
@@ -256,13 +256,13 @@ newsboat -i ~/.config/rss/feedly.opml
 
 Register git repos
 ```
-find ~/Repos -maxdepth 1 -mindepth 1 -print0 | sort -z | xargs -0 -n1 mr register
+find ~/Repos -maxdepth 1 -mindepth 1 | sort | xargs -n1 mr register
 (copy ~/.mrconfig into new host)
 ```
 
-Update al repos
+Update all repos
 ```
-mr -j5 update
+cd ~ ; mr -j5 update
 ```
 
 ### [alacritty](https://github.com/jwilm/alacritty.git)
