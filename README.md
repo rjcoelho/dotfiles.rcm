@@ -312,11 +312,15 @@ curl -s https://raw.githubusercontent.com/zimfw/zimfw/develop/zimfw.zsh -o zim/z
 source ~/.zim/zimfw.zsh install
 ```
 
-Added/remove/change new module(s) to .zimrc:
+Added/remove new module(s) to .zimrc:
 ```
-zimfw clean ; rm zim/modules -rf ; zimfw install
+zimfw uninstall ; zimfw install
 ```
 
+Change module(s) to .zimrc:
+```
+zimfw clean ; zimfw compile
+```
 Update your modules to their latest revisions:
 ```
 zimfw update
