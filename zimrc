@@ -7,8 +7,9 @@ zmodule utility                                     # Utility aliases and functi
 zmodule zsh-users/zsh-completions
 zmodule rjcoelho/completion -b ssh_config           # after zsh-users/zsh-completions
 zmodule zsh-users/zsh-autosuggestions
-zmodule zsh-users/zsh-syntax-highlighting           # after completion
-zmodule zsh-users/zsh-history-substring-search      # after zsh-users/zsh-syntax-highlighting
+#zmodule zsh-users/zsh-syntax-highlighting -b feature/redrawhook           # after completion, see https://github.com/zsh-users/zsh-syntax-highlighting/issues/635
+zmodule zdharma/fast-syntax-highlighting             # after completion, see https://asciinema.org/a/112367
+zmodule zsh-users/zsh-history-substring-search # after zsh-users/zsh-syntax-highlighting
 
 # prompts
 #zmodule git-info                                   # Exposes git repository status information to prompts.
