@@ -1,0 +1,16 @@
+# display line numbers
+add-highlighter global/ number-lines -separator ' '
+
+# highlight opposing brackets
+add-highlighter global/ show-matching
+
+# source plug.kak script
+source "%val{config}/plugins/plug.kak/rc/plug.kak"
+
+# fuzzy-finder
+plug "andreyorst/fzf.kak" config %{
+    map -docstring 'fzf mode' global normal '<c-p>' ': fzf-mode<ret>'
+}
+
+# lf file explorer
+plug "TeddyDD/kakoune-lf"

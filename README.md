@@ -54,10 +54,10 @@ cat vim.log
 
 ### [Neovim](https://github.com/neovim/neovim):
 
-Install neovim:
+Install:
 ```
 # non-OSX
-yum|apt-get|pacman -S neovim python2-neovim python-neovim
+dnd|yum|apt-get|pacman -S neovim python2-neovim python-neovim
 
 # OSX
 brew install neovim --with-python (already on Brewfile)
@@ -69,6 +69,24 @@ To use your existing Vim configurations:
 ```
 ln -sf ~/.vim ~/.config/nvim
 ln -sf ~/.vimrc ~/.config/nvim/init.vim
+```
+
+### (kakoune)[https://kakoune.org/]
+
+Install:
+```
+# non-OSX
+dnd|yum|apt-get|pacman -S kakoune
+
+# OSX
+brew install kakoune (already on Brewfile)
+```
+
+Install/update/clean (plugins)[http://kakoune.org/plugins.html] using (plug.kak)[https://github.com/andreyorst/plug.kak]:
+```
+:plug-install
+:plug-update
+:plug-clean
 ```
 
 ### (Git-Configuration)[https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration] 
