@@ -274,12 +274,29 @@ cargo cache -a # autoclean
 
 Generate theme (tmuxline)[https://github.com/edkolev/tmuxline.vim]:
 ```
-inside tmux open vim and ':Tmuxline airline' or ':Tmuxline lightline' then ':TmuxlineSnapshot ~/.tmux.d/airline2.conf'
+inside tmux open vim and ':Tmuxline airline' or ':Tmuxline lightline' then ':TmuxlineSnapshot ~/.tmux/airline.conf'
 ```
 
-Install plugins ()[https://github.com/tmux-plugins]
+Install/Update/Remove plugins (tmux-plugins)[https://github.com/tmux-plugins]
 ```
-WIP
+edit tmux.conf
+set -g @plugin 'tmux-plugins/tmux-sensible'
+'prefix + I' (or 'prefix + U' to instapp (or Update)
+
+or
+'prefix + alt + u' to remove
+rm -rf ~/.tmux/plugins/<plugin_name>
+```
+
+Using (tmux-xpanes)[https://github.com/greymd/tmux-xpanes]
+
+```
+xpanes --ssh myuser1@host1 myuser2@host2
+```
+
+See (tmux-control-mode)[https://github.com/tmux/tmux/wiki/Control-Mode] for (iterm2 integration)[https://iterm2.com/documentation-tmux-integration.html]
+```
+tmux -CC new -A -s main
 ```
 
 # [vim](http://www.vim.org/)

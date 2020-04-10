@@ -2,3 +2,6 @@
 **/*.zwc.old
 zim/*
 !zim/zimfw.zsh
+tmux/plugins/*
+!tmux/plugins/tpm
+tmux/resurrect
