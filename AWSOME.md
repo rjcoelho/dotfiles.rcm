@@ -1,11 +1,11 @@
-## [Awsome Shell/CLI](https://github.com/alebcay/awesome-shell)
+# [Awsome Shell/CLI](https://github.com/alebcay/awesome-shell)
 
-### Shells
+## Shells
 
    * [fish](https://github.com/fish-shell/fish-shell) Smart and user-friendly command line shell
    * [zsh](http://www.zsh.org/) Powerful shell with scripting language
 
-### Tools
+## Tools
 
    * [bat](https://github.com/sharkdp/bat) cat(1) clone with wings
    * [cheat](https://github.com/chrisallenlane/cheat) Create and view interactive cheatsheets on the command-line
@@ -44,7 +44,7 @@
    * [z](https://github.com/rupa/z) Z is the new j, yo
    * [zoxide](https://github.com/ajeetdsouza/zoxide) a new cd alternative inspired by z
 
-### Apps (ncurses, ...)
+## Apps (ncurses, ...)
 
    * [cmus](https://github.com/cmus/cmus) Cross-platform cli audio player
    * [gotty](https://github.com/yudai/gotty) Share your terminal as a web application
@@ -69,10 +69,11 @@
    * [weechat](https://weechat.org/) WeeChat is a fast, light and extensible chat client
    * [youtube-dl](https://github.com/rg3/youtube-dl) Small command-line program to download videos from YouTube.com
 
-### Awsome lists
+## Awsome lists
 
    * [awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps)
    * [awesome-command-line-apps](https://github.com/herrbischoff/awesome-command-line-apps)
    * [awesome-shell](https://github.com/alebcay/awesome-shell)
    * [console-services](https://github.com/chubin/awesome-console-services)
+   * [devhints.ui](https://devhints.io/)
    * [lib.rs](https://lib.rs/) Rust libraries and applications, see also [crates.io](https://crates.io/)
