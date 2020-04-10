@@ -9,3 +9,6 @@ Host *
     ServerAliveInterval 120
     ServerAliveCountMax 10
     StrictHostKeyChecking no
+    # see https://www.systutorials.com/improving-sshscp-performance-by-choosing-ciphers/ and 'ssh -Q cipher'
+    #Ciphers chacha20-poly1305@openssh.com
+    Compression yes
