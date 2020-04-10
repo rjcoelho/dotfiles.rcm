@@ -1,0 +1,6 @@
+# see https://github.com/alacritty/alacritty/wiki/Changing-the-default-font
+font:
+  normal:
+    family: Source Code Pro for Powerline
+  size: 14.0
+  use_thin_strokes: true

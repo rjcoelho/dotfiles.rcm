@@ -54,6 +54,9 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.shell.osx": "/bin/zsh",
+    //"terminal.external.osxExec": "kitty.app",
+    //"terminal.external.osxExec": "Alacritty.app",
+    "terminal.external.osxExec": "iTerm.app",
 
 // ext gitProjectManager
     "gitProjectManager.baseProjectsFolders": ["/Users/rui.coelho/Repos/"],
