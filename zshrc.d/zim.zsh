@@ -9,6 +9,7 @@ bindkey -e
 # Customize prompt
 RPROMPT+=' %F{6}$(show_rebar_profile) %F{4}$(show_aws_profile)' # sorin/pure
 PROMPT_LEAN_RIGHT='rprompt' # lean
+PROMPT_LEAN_TMUX=""
 
 # Remove path separator from WORDCHARS.
 WORDCHARS=${WORDCHARS//[\/]}
