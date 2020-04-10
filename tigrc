@@ -1,0 +1,10 @@
+# see https://jonas.github.io/tig/
+
+# '=' create a new fixup commit for the focused commit
+bind main = !git commit --fixup=%(commit)
+# 'Ctrl-R' being an interactive rebase with auto-squashing enabled on top of the focused commit
+bind main <Ctrl-R> !git rebase --autosquash -i %(commit)
+# '+' ammend last commit
+bind generic + !git commit --amend
+# 'I' add file interactive
+bind generic I !git add -i %(file)
