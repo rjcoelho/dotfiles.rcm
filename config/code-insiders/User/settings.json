@@ -3,8 +3,7 @@
     "editor.fontFamily": "Source Code Pro for Powerline, Menlo, Monaco, 'Courier New', monospace",
 
 // workbench
-    "workbench.colorTheme": "Nord Wave",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Nord",
 
 // ext gitProjectManager
     "gitProjectManager.baseProjectsFolders": [

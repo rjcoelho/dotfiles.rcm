@@ -10,6 +10,9 @@
 # tmux refactor
 * https://github.com/jabirali/tmux-tilish
 * https://github.com/yardnsm/tmux-1password
+* https://github.com/rothgar/awesome-tmux#status-bar
+
+# kitty refactor
 
 # vimrc refactor
 * https://github.com/itchyny/dotfiles
@@ -26,3 +29,5 @@
 * https://github.com/junegunn/fzf.vim
 * https://github.com/dense-analysis/ale
     or https://github.com/prabirshrestha/vim-lsp
+
+# use editorconfig

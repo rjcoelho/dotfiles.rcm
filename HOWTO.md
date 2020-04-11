@@ -177,6 +177,17 @@ List top-level global installed NPM packages
 npm ls -g --depth 1
 ```
 
+# [nord-theme](https://www.nordtheme.com/)
+
+* [alacritty](https://github.com/arcticicestudio/nord-alacritty)
+* [dircolors](https://www.nordtheme.com/ports/dircolors)
+* [iterm2](https://github.com/arcticicestudio/nord-iterm2)
+* [kitty](https://github.com/connorholyday/nord-kitty)
+* [slack](https://www.nordtheme.com/docs/ports/slack) 
+* [tmux](https://www.nordtheme.com/ports/tmux)
+* [vim](https://www.nordtheme.com/ports/vim)
+* [vscode](https://github.com/arcticicestudio/nord-visual-studio-code)
+
 # [python/pip](https://pip.pypa.io/en/stable/quickstart/)
 
 On OSX install python2 and python3 using brew but don't override OSX's python. See [Homebrew and python](https://docs.brew.sh/Homebrew-and-Python.html).
@@ -285,7 +296,7 @@ Install/Update/Remove plugins [tmux-plugins](https://github.com/tmux-plugins)
 ```
 edit tmux.conf
 set -g @plugin 'tmux-plugins/tmux-sensible'
-'prefix + I' (or 'prefix + U' to instapp (or Update)
+'prefix + I' to install (or 'prefix + U' to Update)
 
 or
 'prefix + alt + u' to remove
@@ -335,9 +346,9 @@ cat vim.log
 
 Install VSCode user settings and extensions
 ```
-if [[ "$OSTYPE" == darwin* ]]; then
-    ln -sf $HOME/.config/Code/User/*.json "$HOME/Library/Application Support/Code/User"
-fi
+# OSX
+ln -sf $HOME/.config/code/User/*.json "$HOME/Library/Application Support/Code/User"
+ln -sf $HOME/.config/code-insiders/User/*.json "$HOME/Library/Application Support/Code - Insiders/User"
 ```
 
 Generate and install extensions list [Command line extension management](https://code.visualstudio.com/docs/editor/extension-gallery#_command-line-extension-management)
