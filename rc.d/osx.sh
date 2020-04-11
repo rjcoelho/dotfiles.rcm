@@ -1,5 +1,5 @@
 # see https://www.iterm2.com/documentation-shell-integration.html
-export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES
+#export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES # disabled since I see no advantages
 [ -f "${HOME}/.iterm2_shell_integration.${SHELL_EXTENSION}" ] && \
     source "${HOME}/.iterm2_shell_integration.${SHELL_EXTENSION}"
 

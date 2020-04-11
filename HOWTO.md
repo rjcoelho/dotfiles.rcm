@@ -277,7 +277,7 @@ Generate theme (tmuxline)[https://github.com/edkolev/tmuxline.vim]:
 inside tmux open vim and ':Tmuxline airline' or ':Tmuxline lightline' then ':TmuxlineSnapshot ~/.tmux/airline.conf'
 ```
 
-Install/Update/Remove plugins (tmux-plugins)[https://github.com/tmux-plugins]
+Install/Update/Remove plugins [tmux-plugins](https://github.com/tmux-plugins)
 ```
 edit tmux.conf
 set -g @plugin 'tmux-plugins/tmux-sensible'
@@ -288,13 +288,13 @@ or
 rm -rf ~/.tmux/plugins/<plugin_name>
 ```
 
-Using (tmux-xpanes)[https://github.com/greymd/tmux-xpanes]
+Using [tmux-xpanes](https://github.com/greymd/tmux-xpanes)
 
 ```
 xpanes --ssh myuser1@host1 myuser2@host2
 ```
 
-See (tmux-control-mode)[https://github.com/tmux/tmux/wiki/Control-Mode] for (iterm2 integration)[https://iterm2.com/documentation-tmux-integration.html]
+See (tmux-control-mode)[https://github.com/tmux/tmux/wiki/Control-Mode] for [iterm2 integration](https://iterm2.com/documentation-tmux-integration.html)
 ```
 tmux -CC new -A -s main
 ```
@@ -341,6 +341,8 @@ Generate and install extensions list [Command line extension management](https:/
 code --list-extensions | sort > ~/.config/Code/User/extensions.list
 cat ~/.config/Code/User/extensions.list | xargs -L1 code --install-extension
 ```
+
+See [vscode extensions marketplace](https://marketplace.visualstudio.com/VSCode) [vscode themes](https://vscodethemes.com/)
 
 # [zimfw](https://github.com/zimfw/zimfw)
 

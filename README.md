@@ -14,4 +14,6 @@ cd ~/.dotfiles.rcm
 rcup -v -d `pwd`
 ```
 
+Recomend that all files should be under `$XDG_CONFIG_HOME` (defaults to `$HOME/.config`)
+
 See [Awsome Shell/CLI](AWSOME) and [HOWTO](HOWTO)
