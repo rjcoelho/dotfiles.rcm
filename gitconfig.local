@@ -2,6 +2,7 @@
     pull-force = "!git fetch ; git reset --hard @{u}"
     rm-local-tags = "!git fetch --prune origin '+refs/tags/*:refs/tags/*'"
     latest-tag = !"git describe --tags $(git rev-list --tags --max-count=1)"
+    commit-amend = !"git commit --all --amend --no-edit"
     co = checkout
     br = branch
     ci = commit
