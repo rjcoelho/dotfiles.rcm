@@ -1,7 +1,5 @@
 // Place your settings in this file to overwrite the default settings
 {
-// window
-    "window.nativeTabs": false,
     "window.zoomLevel": 0,
 
 // explorer
@@ -10,8 +8,7 @@
 // editor
     "editor.renderIndentGuides": true,
     "editor.rulers": [80, 120],
-    "editor.minimap.enabled": true,
-    "editor.fontFamily": "Menlo, Fira Code, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "Source Code Pro for Powerline, Menlo, Fira Code, Monaco, 'Courier New', monospace",
 
 // extensions
     "extensions.autoUpdate": true,
@@ -30,8 +27,9 @@
             "*.config": "erlang"
         },
 
-// breadcrumbs
-    "breadcrumbs.enabled": true,
+// workbench
+    "workbench.colorTheme": "Monokai",
+    "workbench.editor.highlightModifiedTabs": true,
 
 // git
     "git.confirmSync": false,
@@ -40,11 +38,6 @@
 // see https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-telemetry-reporting
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-
-// workbench
-    "workbench.colorTheme": "Monokai",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.editor.highlightModifiedTabs": true,
 
 // terminal
 // see http://www.growingwiththeweb.com/2017/03/mastering-vscodes-terminal.html
@@ -59,7 +52,9 @@
     "terminal.external.osxExec": "iTerm.app",
 
 // ext gitProjectManager
-    "gitProjectManager.baseProjectsFolders": ["/Users/rui.coelho/Repos/"],
+    "gitProjectManager.baseProjectsFolders": [
+        "$HOME/Repos"
+    ],
     "gitProjectManager.maxDepthRecursion": 1,
     "gitProjectManager.storeRepositoriesBetweenSessions": true,
 

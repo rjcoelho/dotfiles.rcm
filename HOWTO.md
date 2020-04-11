@@ -338,7 +338,10 @@ fi
 
 Generate and install extensions list [Command line extension management](https://code.visualstudio.com/docs/editor/extension-gallery#_command-line-extension-management)
 ```
-code --list-extensions | sort > ~/.config/Code/User/extensions.list
+code --list-extensions | sort >! ~/.config/code/User/extensions.list
+cat ~/.config/Code/User/extensions.list | xargs -L1 code --install-extension
+
+code-insiders --list-extensions | sort >! ~/.config/code-insiders/User/extensions.list
 cat ~/.config/Code/User/extensions.list | xargs -L1 code --install-extension
 ```
 

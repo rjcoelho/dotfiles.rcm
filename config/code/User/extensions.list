@@ -1,6 +1,12 @@
+Tyriar.sort-lines
+amazonwebservices.aws-toolkit-vscode
+arcticicestudio.nord-visual-studio-code
 bokuweb.vscode-git-grep
 deerawan.vscode-dash
+dracula-theme.theme-dracula
 eamodio.gitlens
+erlang-ls.erlang-ls
+felipe.nasc-touchbar
 felipecaputo.git-project-manager
 gioboa.jira-plugin
 mjmcloug.vscode-elixir
@@ -8,6 +14,5 @@ mohsen1.prettify-json
 morrislaptop.vscode-open-in-sourcetree
 pgourlain.erlang
 ryu1kn.partial-diff
-samuelcolvin.jinjahtml
 spacek33z.vscode-open-in-gitfork
-waderyan.gitblame
+szTheory.erlang-formatter

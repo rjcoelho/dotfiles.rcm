@@ -1,0 +1,14 @@
+{
+// editor
+    "editor.fontFamily": "Source Code Pro for Powerline, Menlo, Monaco, 'Courier New', monospace",
+
+// workbench
+    "workbench.colorTheme": "Nord Wave",
+    "workbench.iconTheme": "vscode-icons",
+
+// ext gitProjectManager
+    "gitProjectManager.baseProjectsFolders": [
+        "$HOME/Repos"
+    ],
+    "gitProjectManager.maxDepthRecursion": 1
+}
