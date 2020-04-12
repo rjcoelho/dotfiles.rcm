@@ -292,7 +292,7 @@ Generate theme (tmuxline)[https://github.com/edkolev/tmuxline.vim]:
 inside tmux open vim and ':Tmuxline airline' or ':Tmuxline lightline' then ':TmuxlineSnapshot ~/.tmux/airline.conf'
 ```
 
-Install/Update/Remove plugins [tmux-plugins](https://github.com/tmux-plugins)
+Install/Update/Remove plugins [tmux-plugins](https://github.com/tmux-plugins)/[awesome-tmux](https://github.com/rothgar/awesome-tmux)
 ```
 edit tmux.conf
 set -g @plugin 'tmux-plugins/tmux-sensible'
