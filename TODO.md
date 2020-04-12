@@ -7,9 +7,6 @@
  dircolors https://github.com/dracula/dracula-theme/issues/218
 * nord: alacritty, dircolors?, iterm, slack, tmux, vim, vscode
 
-# automate
-* https://github.com/Hammerspoon/hammerspoon
-
 # tmux refactor
 * https://github.com/jabirali/tmux-tilish
 * https://github.com/yardnsm/tmux-1password

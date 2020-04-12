@@ -96,6 +96,10 @@ git rebase -i --autosquash
 
 See [tig](https://jonas.github.io/tig) and [grv](https://github.com/rgburke/grv)
 
+# [hammerspoon](https://github.com/Hammerspoon/hammerspoon)
+
+See pre-made plugins / [spoons](http://www.hammerspoon.org/go/#spoons) and [sample-configuration](https://github.com/Hammerspoon/hammerspoon/wiki/Sample-Configurations)
+
 # [item2](https://iterm2.com/)
 
 Load/Save Profiles
