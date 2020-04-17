@@ -121,6 +121,11 @@ Install/update/clean [plugins](http://kakoune.org/plugins.html) using [plug.kak]
 :plug-clean
 ```
 
+# [karabiner](https://github.com/pqrs-org/Karabiner-Elements)
+
+For OSX only, import from config/karabiner
+All modifier keys are done in karabiner
+
 # [mr](http://myrepos.branchable.com/)
 
 Register git repos
@@ -183,7 +188,7 @@ npm ls -g --depth 1
 * [dircolors](https://www.nordtheme.com/ports/dircolors)
 * [iterm2](https://github.com/arcticicestudio/nord-iterm2)
 * [kitty](https://github.com/connorholyday/nord-kitty)
-* [slack](https://www.nordtheme.com/docs/ports/slack) 
+* [slack](https://www.nordtheme.com/docs/ports/slack)
 * [tmux](https://www.nordtheme.com/ports/tmux)
 * [vim](https://www.nordtheme.com/ports/vim)
 * [vscode](https://github.com/arcticicestudio/nord-visual-studio-code)
