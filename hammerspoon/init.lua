@@ -7,7 +7,8 @@ end):start()
 local mods_app = {'cmd', 'shift'}
 remap = hs.hotkey.bind
 remap(mods_app, 'b', function () hs.application.launchOrFocus('Brave Browser') end)
-remap(mods_app, 'e', function () hs.application.launchOrFocus('Visual Studio Code') end)
+remap(mods_app, 'c', function () hs.application.launchOrFocus('Visual Studio Code') end)
+remap(mods_app, 'm', function () hs.application.launchOrFocus('Mail') end)
 remap(mods_app, 'n', function () hs.application.launchOrFocus('Brave Browser Nightly') end)
 remap(mods_app, 's', function () hs.application.launchOrFocus('Slack') end)
 remap(mods_app, 't', function () hs.application.launchOrFocus('iTerm') end)

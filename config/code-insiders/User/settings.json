@@ -2,12 +2,15 @@
 // editor
     "editor.fontFamily": "Source Code Pro for Powerline, Menlo, Monaco, 'Courier New', monospace",
 
-// workbench
-    "workbench.colorTheme": "Nord",
-
 // ext gitProjectManager
     "gitProjectManager.baseProjectsFolders": [
         "$HOME/Repos"
     ],
-    "gitProjectManager.maxDepthRecursion": 1
+    "gitProjectManager.maxDepthRecursion": 1,
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "[erlang]": {
+        "editor.defaultFormatter": "erlang-ls.erlang-ls"
+    },
+    "window.zoomLevel": 0
 }
