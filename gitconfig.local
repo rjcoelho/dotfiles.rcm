@@ -1,12 +1,21 @@
 [alias]
-    pull-force = "!git fetch ; git reset --hard @{u}"
-    rm-local-tags = "!git fetch --prune origin '+refs/tags/*:refs/tags/*'"
-    latest-tag = !"git describe --tags $(git rev-list --tags --max-count=1)"
-    commit-amend = !"git commit --all --amend --no-edit"
-    co = checkout
+    amend = commit -a --amend
     br = branch
     ci = commit
+    co = checkout
+    commit-amend = commit --all --amend --no-edit
+    config-list = config --list --show-origin
+    head = rev-parse HEAD
+    latest-tag = !"git describe --tags $(git rev-list --tags --max-count=1)"
+    open = "!open `git config remote.origin.url`"
+    pull-force = "!git fetch ; git reset --hard @{u}"
+    push-safe = push -f --force-with-lease
+    rm-local-tags = "!git fetch --prune origin '+refs/tags/*:refs/tags/*'"
+    sb = submodule
+    sb-rm = !"git submodule deinit -f $@ && git rm -f $@"
+    sb-url = submodule foreach -q git config remote.origin.url
     st = status
+    url = config remote.origin.url
 [submodule]
     fetchJobs = 4
 [core]

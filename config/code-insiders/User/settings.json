@@ -8,7 +8,7 @@
     ],
     "gitProjectManager.maxDepthRecursion": 1,
     "workbench.iconTheme": "Monokai Pro Icons",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Monokai",
     "[erlang]": {
         "editor.defaultFormatter": "erlang-ls.erlang-ls"
     },
