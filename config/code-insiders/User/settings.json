@@ -7,10 +7,9 @@
         "$HOME/Repos"
     ],
     "gitProjectManager.maxDepthRecursion": 1,
-    "workbench.iconTheme": "Monokai Pro Icons",
-    "workbench.colorTheme": "Monokai",
     "[erlang]": {
         "editor.defaultFormatter": "erlang-ls.erlang-ls"
     },
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Monokai"
 }
