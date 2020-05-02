@@ -26,9 +26,6 @@
     "files.associations": {
             "*.config": "erlang"
         },
-
-// workbench
-    "workbench.colorTheme": "Monokai",
     "workbench.editor.highlightModifiedTabs": true,
 
 // git

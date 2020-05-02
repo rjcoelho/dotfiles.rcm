@@ -11,5 +11,5 @@
         "editor.defaultFormatter": "erlang-ls.erlang-ls"
     },
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Monokai"
+    "workbench.colorTheme": "Nord Extra Dark"
 }
